@@ -1,26 +1,21 @@
 #!/usr/bin/env python3
-"""Check the palettes for robustness to color vision deficiencies.
+"""Dichromacy simulation and the perceptual difference metric.
 
-Dichromacy: Vienot 1999 for protan/deutan, Brettel 1997 for tritan
-(per the daltonlens.org review, Machado 2009 is fine for anomalous
-trichromacy but is not the best choice for full dichromacy). Matrices
-in linear sRGB are taken from libDaltonLens (public domain).
-Distinguishability - pairwise CIEDE2000 after simulation.
+Vienot 1999 for protan/deutan, Brettel 1997 for tritan (per the
+daltonlens.org review, Machado 2009 is fine for anomalous trichromacy
+but is not the best choice for full dichromacy). Matrices in linear
+sRGB are taken from libDaltonLens (public domain). Distinguishability
+is pairwise CIEDE2000 after simulation.
 
-Run: cvd.html report + summary to stdout. The regression lives in
-check.py and works off colors.json; tritanopia is not hard-constrained,
-it is only shown in the report.
+Consumed by optimize.py (the max-min objective), resolve.py (metrics
+at every depth) and sitedata.py (precomputed vision sets for the site
+switcher). Tritanopia is not a hard constraint (project decision):
+HARD lists the simulations the guarantees are enforced against.
 """
 
-import json
 from math import atan2, cos, degrees, exp, hypot, radians, sin, sqrt
 
-from palette import CSS, EDITOR, JS, ROLES, css_vars, lch_to_hex, swatch
-
-REPORT_SLUGS = ["pepel", "kremen", "enot"]
-CRIT, RISK = 8.0, 15.0   # dE00: below CRIT pairs merge, below RISK borderline
-ANSI_ORDER = ["black", "red", "green", "yellow",
-              "blue", "magenta", "cyan", "white"]
+from palette import ROLES
 
 VIENOT = {
     "protanopia": [
@@ -87,7 +82,7 @@ SIM_FUNCS = {
     "deuteranopia": lambda h: simulate(h, VIENOT["deuteranopia"]),
     "tritanopia": simulate_tritan,
 }
-HARD = ("protanopia", "deuteranopia")  # tritan only in the report
+HARD = ("protanopia", "deuteranopia")  # tritan is not enforced
 
 
 def hex_to_lab(h):
@@ -143,7 +138,7 @@ def de2000(lab1, lab2):
                 + rt * (dcp / sc) * (dbig_hp / sh))
 
 
-# -------------------------------------------------------------- report
+# ------------------------------------------------------------- metrics
 
 def sim_theme(theme, fn):
     return {k: fn(v) for k, v in theme.items() if not k.startswith("_")}
@@ -168,154 +163,3 @@ def hard_min(theme, names=None):
         if p[0] < worst[0]:
             worst = p
     return worst
-
-
-def flags_html(pairs, limit=6):
-    crit = [p for p in pairs if p[0] < CRIT]
-    risk = [p for p in pairs if CRIT <= p[0] < RISK]
-    parts = []
-    if crit:
-        parts.append("merging: " + ", ".join(
-            f"{r1}-{r2} {d:.1f}" for d, r1, r2 in crit))
-    if risk:
-        head = ", ".join(f"{r1}-{r2} {d:.1f}" for d, r1, r2 in risk[:limit])
-        tail = f" and {len(risk) - limit} more" if len(risk) > limit else ""
-        parts.append("borderline: " + head + tail)
-    if not parts:
-        d, r1, r2 = pairs[0]
-        parts.append(f"all pairs distinguishable, minimum {r1}-{r2} {d:.1f}")
-    return "<br>".join(parts)
-
-
-def panel(title, theme, pairs):
-    sw = "".join(swatch(theme[r], r) for r in ROLES)
-    return (f'<div class="pane"><div class="eyebrow">{title}</div>'
-            f'<div style="{css_vars(theme)}">{EDITOR}'
-            f'<div class="swatches"><div class="swrow">{sw}</div></div>'
-            f'</div><div class="flags">{flags_html(pairs)}</div></div>')
-
-
-def theme_block(label, theme):
-    panels = [panel("normal", theme, accent_pairs(theme))]
-    for sim_name, fn in SIM_FUNCS.items():
-        st = sim_theme(theme, fn)
-        panels.append(panel(sim_name, st, accent_pairs(st)))
-    return (f'<h3 class="thlabel">{label}</h3>'
-            f'<div class="panes cvd">{"".join(panels)}</div>')
-
-
-def ansi_rows(amap):
-    row1 = "".join(swatch(amap[n], n) for n in ANSI_ORDER)
-    row2 = "".join(swatch(amap["br_" + n], "br_" + n) for n in ANSI_ORDER)
-    return (f'<div class="swatches"><div class="swrow small">{row1}</div>'
-            f'<div class="swrow small">{row2}</div></div>')
-
-
-def ansi_block(label, amap):
-    names = list(amap)
-    panels = []
-    for sim_name in ("normal",) + tuple(SIM_FUNCS):
-        m = amap if sim_name == "normal" else {
-            k: SIM_FUNCS[sim_name](v) for k, v in amap.items()}
-        pairs = accent_pairs(m, names)
-        panels.append(f'<div class="pane"><div class="eyebrow">{sim_name}'
-                      f'</div>{ansi_rows(m)}'
-                      f'<div class="flags">{flags_html(pairs)}</div></div>')
-    return (f'<h3 class="thlabel">{label} · ansi 16</h3>'
-            f'<div class="panes cvd">{"".join(panels)}</div>')
-
-
-def variant_block(v):
-    html = (f'<section class="variant" id="{v["slug"]}"><div class="vhead">'
-            f'<div><h2>{v["name"]}</h2><div class="desc">{v["desc"]}</div>'
-            f'</div></div>'
-            + theme_block("dark", v["dark"])
-            + theme_block("light", v["light"]))
-    if v.get("ansi"):
-        html += (ansi_block("dark", v["ansi"]["dark"])
-                 + ansi_block("light", v["ansi"]["light"]))
-    return html + '</section>'
-
-
-EXTRA_CSS = """
-.thlabel {
-  font-size: 12px; font-weight: 600; letter-spacing: .24em;
-  text-transform: uppercase; margin: 26px 0 10px;
-}
-.panes.cvd { row-gap: 26px; }
-.flags { font-size: 11px; line-height: 1.5; margin-top: 8px; opacity: .85; }
-"""
-
-
-def page(variants):
-    chrome = {
-        "page_bg": lch_to_hex(42, 1, 90),
-        "page_text": lch_to_hex(92, 2, 90),
-        "page_dim": lch_to_hex(74, 2, 90),
-        "page_faint": lch_to_hex(54, 1.5, 90),
-    }
-    body = "".join(variant_block(v) for v in variants)
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>color vision deficiencies</title>
-<style>{CSS.substitute(chrome)}{EXTRA_CSS}</style>
-</head>
-<body>
-<div class="wrap">
-<header>
-  <h1>color vision</h1>
-  <div class="sub">palettes under dichromacy</div>
-  <div class="method">
-    models: Vienot 1999 (protanopia, deuteranopia) and Brettel 1997
-    (tritanopia), libDaltonLens matrices, linear sRGB.
-    metric: pairwise CIEDE2000 between the seven accents after simulation.
-    thresholds: dE00 &lt; {CRIT:.0f} - <b>merging</b>,
-    {CRIT:.0f}-{RISK:.0f} - borderline, above - distinguishable.
-    tritanopia is extremely rare and is not part of the hard constraints.
-  </div>
-</header>
-{body}
-<footer>generated by cvd.py from palettes.json</footer>
-</div>
-<script>{JS}</script>
-</body>
-</html>"""
-
-
-def clean(theme):
-    return {k: v for k, v in theme.items() if not k.startswith("_")}
-
-
-def report(variants):
-    with open("cvd.html", "w") as f:
-        f.write(page(variants))
-    for v in variants:
-        print(v["name"])
-        for mode in ("dark", "light"):
-            theme = clean(v[mode])
-            for sim_name in ("normal",) + tuple(SIM_FUNCS):
-                t = theme if sim_name == "normal" else sim_theme(
-                    theme, SIM_FUNCS[sim_name])
-                pairs = accent_pairs(t)
-                bad = [p for p in pairs if p[0] < RISK]
-                worst = "; ".join(f"{r1}-{r2} {d:.1f}" for d, r1, r2 in bad)
-                d, r1, r2 = pairs[0]
-                print(f"  {mode:5} {sim_name:13} min {r1}-{r2} {d:5.1f}"
-                      f"  {'issues: ' + worst if bad else 'ok'}")
-
-
-
-def main():
-    with open("palettes.json") as f:
-        data = json.load(f)
-    order = {s: i for i, s in enumerate(REPORT_SLUGS)}
-    variants = sorted((v for v in data if v["slug"] in order),
-                      key=lambda v: order[v["slug"]])
-    report(variants)
-
-
-if __name__ == "__main__":
-    main()

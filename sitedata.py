@@ -24,13 +24,11 @@ import os
 import shutil
 
 from cvd import SIM_FUNCS
+from palette import ANSI_ORDER, NEUTRAL_ROLES, ROLES, SLUG, enot_variant
 
-SLUG = "enot"
 BASE_URL = "https://enot-theme.github.io/site/"
 OUT = "build/site"
-ROLE_KEYS = ["bg0", "bg1", "bg2", "bg3", "fg0", "fg1", "comment", "linenr",
-             "red", "orange", "yellow", "green", "aqua", "blue", "purple"]
-ACCENTS = ["red", "orange", "yellow", "green", "aqua", "blue", "purple"]
+ROLE_KEYS = NEUTRAL_ROLES + ROLES
 # bright row of gruvbox dark and normal row of gruvbox light, same 7 roles
 GRUVBOX = {
     "dark": ["#fb4934", "#fe8019", "#fabd2f", "#b8bb26",
@@ -89,7 +87,7 @@ def bundle(variant, spec, checks, ports):
         "slug": SLUG,
         "baseUrl": BASE_URL,
         "roles": ROLE_KEYS,
-        "accents": ACCENTS,
+        "accents": ROLES,
         "vision": build_vision(variant),
         "metrics": spec["metrics"],
         "gates": [{"mode": m, "depth": d, "metric": k, "threshold": t}
@@ -162,9 +160,7 @@ def llms_full(variant):
             lines.append(f"- {k}: {theme[k]}{suffix}")
         lines.append("")
         lines.append(f"### {mode} theme, ANSI 16\n")
-        order = ["black", "red", "green", "yellow", "blue", "magenta",
-                 "cyan", "white"]
-        for n in order + ["br_" + n for n in order]:
+        for n in ANSI_ORDER + ["br_" + n for n in ANSI_ORDER]:
             lines.append(f"- {n}: {variant['ansi'][mode][n]}")
         lines.append("")
     return "\n".join(lines) + "\n"
@@ -172,8 +168,7 @@ def llms_full(variant):
 
 def main():
     from check import CHECKS
-    with open("palettes.json") as f:
-        variant = next(x for x in json.load(f) if x["slug"] == SLUG)
+    variant = enot_variant()
     with open("colors.json") as f:
         spec = json.load(f)
     with open("ports/registry.json") as f:

@@ -16,11 +16,11 @@ pass: roles return to the gruvbox anchors within the slack of the
 bottleneck.
 
 Method: greedy farthest-point + coordinate ascent on a grid.
-Output: enot.json, picked up by palette.py automatically.
+Output: enot.json, consumed via palette.enot_variant().
 """
 
 import json
-from palette import (VARIANTS, ROLES, lch_to_lab, lab_to_xyz, xyz_to_srgb,
+from palette import (BASE, ROLES, lch_to_lab, lab_to_xyz, xyz_to_srgb,
                      in_gamut, lch_to_hex, build_theme)
 from cvd import (SIM_FUNCS, HARD, hex_to_lab, hex_to_linear, de2000,
                  accent_pairs)
@@ -276,7 +276,7 @@ def report_chosen(tag, chosen, bg):
 
 
 def main():
-    base = next(v for v in VARIANTS if v["slug"] == "kremen")
+    base = BASE
     result = {"accents": {}, "ansi": {}}
     for mode in ("dark", "light"):
         theme = build_theme(base[mode], base["hues"], base["mult"],
@@ -295,7 +295,7 @@ def main():
         report_chosen(f"{mode} ansi16", chosen16, bg)
     with open("enot.json", "w") as f:
         json.dump(result, f, indent=2)
-    print("wrote enot.json; next: make palettes report check")
+    print("wrote enot.json")
 
 
 if __name__ == "__main__":
