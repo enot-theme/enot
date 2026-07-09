@@ -24,18 +24,12 @@ import os
 import shutil
 
 from cvd import SIM_FUNCS
-from palette import ANSI_ORDER, NEUTRAL_ROLES, ROLES, SLUG, enot_variant
+from palette import (ANSI_ORDER, GRUVBOX, NEUTRAL_ROLES, ROLES, SLUG,
+                     enot_variant)
 
 BASE_URL = "https://enot-theme.github.io/"
 OUT = "build/site"
 ROLE_KEYS = NEUTRAL_ROLES + ROLES
-# bright row of gruvbox dark and normal row of gruvbox light, same 7 roles
-GRUVBOX = {
-    "dark": ["#fb4934", "#fe8019", "#fabd2f", "#b8bb26",
-             "#8ec07c", "#83a598", "#d3869b"],
-    "light": ["#cc241d", "#d65d0e", "#d79921", "#98971a",
-              "#689d6a", "#458588", "#b16286"],
-}
 
 
 def vision_sets(colors):

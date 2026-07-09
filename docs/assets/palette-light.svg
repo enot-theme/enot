@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="454" viewBox="0 0 640 454">
+<rect width="640" height="454" rx="10" fill="#f4f2ee"/>
+<text x="24" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">accents</text>
+<rect x="24" y="38" width="76" height="44" rx="5" fill="#a95359" stroke="#c4c2be" stroke-width="1"/>
+<text x="62.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">red</text>
+<text x="62.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#a95359</text>
+<rect x="110" y="38" width="76" height="44" rx="5" fill="#743d19" stroke="#c4c2be" stroke-width="1"/>
+<text x="148.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">orange</text>
+<text x="148.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#743d19</text>
+<rect x="196" y="38" width="76" height="44" rx="5" fill="#68573d" stroke="#c4c2be" stroke-width="1"/>
+<text x="234.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">yellow</text>
+<text x="234.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#68573d</text>
+<rect x="282" y="38" width="76" height="44" rx="5" fill="#6a6c28" stroke="#c4c2be" stroke-width="1"/>
+<text x="320.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">green</text>
+<text x="320.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#6a6c28</text>
+<rect x="368" y="38" width="76" height="44" rx="5" fill="#177657" stroke="#c4c2be" stroke-width="1"/>
+<text x="406.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">aqua</text>
+<text x="406.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#177657</text>
+<rect x="454" y="38" width="76" height="44" rx="5" fill="#187886" stroke="#c4c2be" stroke-width="1"/>
+<text x="492.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">blue</text>
+<text x="492.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#187886</text>
+<rect x="540" y="38" width="76" height="44" rx="5" fill="#9a5073" stroke="#c4c2be" stroke-width="1"/>
+<text x="578.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">purple</text>
+<text x="578.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#9a5073</text>
+<text x="24" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">neutrals</text>
+<rect x="24" y="142" width="66" height="28" rx="5" fill="#f4f2ee" stroke="#c4c2be" stroke-width="1"/>
+<text x="57.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">bg0</text>
+<text x="57.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#f4f2ee</text>
+<rect x="98" y="142" width="66" height="28" rx="5" fill="#e7e5e1" stroke="#c4c2be" stroke-width="1"/>
+<text x="131.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">bg1</text>
+<text x="131.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#e7e5e1</text>
+<rect x="172" y="142" width="66" height="28" rx="5" fill="#d7d6d2" stroke="#c4c2be" stroke-width="1"/>
+<text x="205.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">bg2</text>
+<text x="205.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#d7d6d2</text>
+<rect x="246" y="142" width="66" height="28" rx="5" fill="#c4c2be" stroke="#c4c2be" stroke-width="1"/>
+<text x="279.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">bg3</text>
+<text x="279.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#c4c2be</text>
+<rect x="320" y="142" width="66" height="28" rx="5" fill="#48443e" stroke="#c4c2be" stroke-width="1"/>
+<text x="353.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">fg0</text>
+<text x="353.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#48443e</text>
+<rect x="394" y="142" width="66" height="28" rx="5" fill="#64605c" stroke="#c4c2be" stroke-width="1"/>
+<text x="427.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">fg1</text>
+<text x="427.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#64605c</text>
+<rect x="468" y="142" width="66" height="28" rx="5" fill="#9b9893" stroke="#c4c2be" stroke-width="1"/>
+<text x="501.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">comment</text>
+<text x="501.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#9b9893</text>
+<rect x="542" y="142" width="66" height="28" rx="5" fill="#b3b0ab" stroke="#c4c2be" stroke-width="1"/>
+<text x="575.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">linenr</text>
+<text x="575.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#b3b0ab</text>
+<text x="24" y="222" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">diff backgrounds</text>
+<rect x="24" y="230" width="120" height="28" rx="5" fill="#e5e3d0" stroke="#c4c2be" stroke-width="1"/>
+<text x="84.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_add_bg</text>
+<text x="84.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#e5e3d0</text>
+<rect x="154" y="230" width="120" height="28" rx="5" fill="#f7dcdc" stroke="#c4c2be" stroke-width="1"/>
+<text x="214.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_del_bg</text>
+<text x="214.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#f7dcdc</text>
+<rect x="284" y="230" width="120" height="28" rx="5" fill="#d0e7eb" stroke="#c4c2be" stroke-width="1"/>
+<text x="344.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_change_bg</text>
+<text x="344.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#d0e7eb</text>
+<rect x="414" y="230" width="120" height="28" rx="5" fill="#b1d9e0" stroke="#c4c2be" stroke-width="1"/>
+<text x="474.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_text_bg</text>
+<text x="474.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#b1d9e0</text>
+<text x="24" y="310" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">ansi 16</text>
+<rect x="24" y="318" width="66" height="24" rx="5" fill="#4a4641" stroke="#c4c2be" stroke-width="1"/>
+<text x="57.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">black</text>
+<text x="57.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#4a4641</text>
+<rect x="98" y="318" width="66" height="24" rx="5" fill="#a25756" stroke="#c4c2be" stroke-width="1"/>
+<text x="131.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">red</text>
+<text x="131.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#a25756</text>
+<rect x="172" y="318" width="66" height="24" rx="5" fill="#5c5b37" stroke="#c4c2be" stroke-width="1"/>
+<text x="205.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">green</text>
+<text x="205.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#5c5b37</text>
+<rect x="246" y="318" width="66" height="24" rx="5" fill="#836933" stroke="#c4c2be" stroke-width="1"/>
+<text x="279.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">yellow</text>
+<text x="279.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#836933</text>
+<rect x="320" y="318" width="66" height="24" rx="5" fill="#0d7381" stroke="#c4c2be" stroke-width="1"/>
+<text x="353.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">blue</text>
+<text x="353.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#0d7381</text>
+<rect x="394" y="318" width="66" height="24" rx="5" fill="#944c6b" stroke="#c4c2be" stroke-width="1"/>
+<text x="427.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">magenta</text>
+<text x="427.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#944c6b</text>
+<rect x="468" y="318" width="66" height="24" rx="5" fill="#2c7552" stroke="#c4c2be" stroke-width="1"/>
+<text x="501.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">cyan</text>
+<text x="501.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#2c7552</text>
+<rect x="542" y="318" width="66" height="24" rx="5" fill="#cac6bf" stroke="#c4c2be" stroke-width="1"/>
+<text x="575.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">white</text>
+<text x="575.0" y="369" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#cac6bf</text>
+<rect x="24" y="386" width="66" height="24" rx="5" fill="#7b7670" stroke="#c4c2be" stroke-width="1"/>
+<text x="57.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_black</text>
+<text x="57.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#7b7670</text>
+<rect x="98" y="386" width="66" height="24" rx="5" fill="#632e28" stroke="#c4c2be" stroke-width="1"/>
+<text x="131.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_red</text>
+<text x="131.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#632e28</text>
+<rect x="172" y="386" width="66" height="24" rx="5" fill="#50530f" stroke="#c4c2be" stroke-width="1"/>
+<text x="205.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_green</text>
+<text x="205.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#50530f</text>
+<rect x="246" y="386" width="66" height="24" rx="5" fill="#493603" stroke="#c4c2be" stroke-width="1"/>
+<text x="279.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_yellow</text>
+<text x="279.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#493603</text>
+<rect x="320" y="386" width="66" height="24" rx="5" fill="#06444d" stroke="#c4c2be" stroke-width="1"/>
+<text x="353.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_blue</text>
+<text x="353.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#06444d</text>
+<rect x="394" y="386" width="66" height="24" rx="5" fill="#5d1c3e" stroke="#c4c2be" stroke-width="1"/>
+<text x="427.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_magenta</text>
+<text x="427.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#5d1c3e</text>
+<rect x="468" y="386" width="66" height="24" rx="5" fill="#105958" stroke="#c4c2be" stroke-width="1"/>
+<text x="501.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_cyan</text>
+<text x="501.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#105958</text>
+<rect x="542" y="386" width="66" height="24" rx="5" fill="#eeeeee" stroke="#c4c2be" stroke-width="1"/>
+<text x="575.0" y="425" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">br_white</text>
+<text x="575.0" y="437" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#eeeeee</text>
+</svg>

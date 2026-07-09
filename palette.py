@@ -74,6 +74,15 @@ NEUTRAL_ROLES = ["bg0", "bg1", "bg2", "bg3", "fg0", "fg1", "comment", "linenr"]
 ANSI_ORDER = ["black", "red", "green", "yellow",
               "blue", "magenta", "cyan", "white"]
 
+# comparison palette for the vision demos: the bright row of gruvbox
+# dark and the normal row of gruvbox light, same seven role order
+GRUVBOX = {
+    "dark": ["#fb4934", "#fe8019", "#fabd2f", "#b8bb26",
+             "#8ec07c", "#83a598", "#d3869b"],
+    "light": ["#cc241d", "#d65d0e", "#d79921", "#98971a",
+              "#689d6a", "#458588", "#b16286"],
+}
+
 # the "flint" base: gruvbox on neutral stone - gray backgrounds like
 # #282828, warm text, the highest accent chroma. Backgrounds and text
 # are fixed L* steps; the accents' (L, C, h) come from the optimizer.

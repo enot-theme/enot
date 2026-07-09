@@ -1,7 +1,7 @@
 .DEFAULT_GOAL := help
 # the site is the sibling Astro repo (symlink site -> ../site); the
 # pipeline feeds it a data bundle, the site repo's CI builds and deploys
-.PHONY: help optimize resolve render check build sitedata all deploy
+.PHONY: help optimize resolve render assets check build sitedata all deploy
 
 help: ## show this help
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ {printf "  %-10s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -15,10 +15,13 @@ resolve: ## color spec at three depths (colors.json)
 render: ## render every port from colors.json (ports/*)
 	python3 build.py
 
+assets: ## README design reference SVGs (docs/assets/*)
+	python3 assets.py
+
 check: ## regression: invariants of colors.json and artifacts
 	python3 check.py
 
-build: optimize resolve render check ## full pipeline (CI gate)
+build: optimize resolve render assets check ## full pipeline (CI gate)
 
 sitedata: ## emit the site data bundle into build/site (needs build)
 	python3 sitedata.py

@@ -24,6 +24,8 @@ import os
 import re
 import sys
 
+from assets import HEX_CHECKED
+
 # (theme | *, depth, metric from colors.json, threshold)
 CHECKS = [
     ("*", "16M", "accents", 8.0),
@@ -76,6 +78,13 @@ def allowed_sets(spec):
     return hexes, c256
 
 
+def check_hex(path, text, hexes, msgs):
+    found = set(re.findall(r"#[0-9a-fA-F]{6}", text))
+    alien = {h for h in found if h.lower() not in hexes}
+    fail(msgs, not alien, f"{path}: hex from the specification"
+         + (f" (alien: {sorted(alien)})" if alien else ""))
+
+
 def check_artifacts(spec, msgs):
     hexes, c256 = allowed_sets(spec)
     for m in port_manifests():
@@ -83,10 +92,7 @@ def check_artifacts(spec, msgs):
         for path in paths:
             text = open(path).read()
             if "16M" in m["depth"]:
-                found = set(re.findall(r"#[0-9a-fA-F]{6}", text))
-                alien = {h for h in found if h.lower() not in hexes}
-                fail(msgs, not alien, f"{path}: hex from the specification"
-                     + (f" (alien: {sorted(alien)})" if alien else ""))
+                check_hex(path, text, hexes, msgs)
             else:
                 clean = not re.search(r"#[0-9a-fA-F]{6}", text)
                 fail(msgs, clean, f"{path}: ANSI indexes only, no hex")
@@ -96,6 +102,10 @@ def check_artifacts(spec, msgs):
                 fail(msgs, not alien,
                      f"{path}: 256 indexes from the specification"
                      + (f" (alien: {sorted(alien)})" if alien else ""))
+    # README reference sheets carry only specification colors; cvd.svg is
+    # exempt by design (gruvbox comparison and simulation outputs)
+    for path in HEX_CHECKED:
+        check_hex(path, open(path).read(), hexes, msgs)
 
 
 def main():
