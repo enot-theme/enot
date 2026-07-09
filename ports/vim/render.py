@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Vim colorscheme port: vim/colors/enot.vim.
+"""Vim colorscheme port: dist/vim/colors/enot.vim.
 
 Module port for the enot build. render(spec) returns {path: text};
 both themes go in one file (branching on &background), guifg/guibg
@@ -177,4 +177,4 @@ endif
 
 {links}
 """
-    return {f"vim/colors/{SLUG}.vim": body}
+    return {f"dist/vim/colors/{SLUG}.vim": body}

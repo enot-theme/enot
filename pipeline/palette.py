@@ -129,7 +129,7 @@ def build_theme(spec, hues, mult, dark):
 
 def enot_variant():
     """The enot theme from enot.json (written by optimize.py)."""
-    with open("enot.json") as f:
+    with open("pipeline/enot.json") as f:
         acc = json.load(f)
     return {
         "dark": build_theme({**BASE["dark"], "accents": acc["accents"]["dark"]},

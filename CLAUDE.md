@@ -7,11 +7,14 @@ this file holds the map and the rules only.
 
 ## Pipeline
 
+Layout: the modules and the optimizer state enot.json live in pipeline/,
+port sources in ports/<app>/, rendered artifacts in dist/<app>/.
+
 - palette.py - shared constants, LCh -> sRGB math, the flint base and enot_variant() assembling the theme from enot.json;
 - optimize.py -> enot.json: 7 accents + 16 ANSI per theme, max-min pairwise CIEDE2000 across normal vision, protanopia and deuteranopia, then an aesthetic pass toward gruvbox anchors;
 - resolve.py -> colors.json: every role at three depths (hex, xterm-256, ANSI slot); 256 is solved by the same optimizer over xterm-grid candidates, not by nearest-color (which merges roles down to dE00 0); the single source of colors for renderers;
 - check.py - the single regression: metric thresholds per depth + artifact conformance derived from ports/*/port.json, so a new port is checked without touching check.py; cvd.py holds the simulation matrices and dE00 only;
-- build.py - the port engine: renders every port under ports/ from colors.json (no color math) to its install paths and writes ports/registry.json (the coverage manifest); a port is ports/<app>/port.json of kind template (a ${var} file, no Python), module (render.py) or static (copied verbatim); a new simple app is one template + one manifest;
+- build.py - the port engine: renders every port under ports/ from colors.json (no color math) into dist/<app>/ at the paths declared in the manifest and writes ports/registry.json (the coverage manifest); a port is ports/<app>/port.json of kind template (a ${var} file, no Python), module (render.py) or static (copied verbatim); a new simple app is one template + one manifest;
 - assets.py -> docs/assets/*.svg: the README design reference; editor and palette sheets are hex-checked, cvd.svg is exempt (foreign palette and simulation outputs);
 - sitedata.py -> build/site/: the pipeline's contract with the site - site.json bundle (precomputed vision simulations, metrics, gates, numbers, port registry), llms*.txt and downloads, all derived from the registry; the site never recomputes colors;
 - make build - full pipeline, the CI gate; make deploy - build + sitedata, then sync the bundle into the Astro site and push. CI fails on any check violation or when artifacts are not regenerated from the spec.

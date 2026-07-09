@@ -36,19 +36,20 @@ metrics embedded.
 
 ## Install
 
-- [vim / neovim](https://enot-theme.github.io/vim/): copy [vim/colors/enot.vim](vim/colors/enot.vim) into `~/.vim/colors/` or `~/.config/nvim/colors/`;
-- [WezTerm](https://enot-theme.github.io/wezterm/): copy [wezterm/*.toml](wezterm) into `~/.config/wezterm/colors/`;
-- [Midnight Commander](https://enot-theme.github.io/mc/): copy [mc/*.ini](mc) into `~/.local/share/mc/skins/`;
-- [ranger](https://enot-theme.github.io/ranger/): copy [ranger/colorschemes/enot.py](ranger/colorschemes/enot.py) into `~/.config/ranger/colorschemes/`;
-- [Telegram Desktop](https://enot-theme.github.io/telegram/): open [telegram/enot-*.tdesktop-theme](telegram) via Settings > Chat settings > Choose from file.
+- [vim / neovim](https://enot-theme.github.io/vim/): copy [dist/vim/colors/enot.vim](dist/vim/colors/enot.vim) into `~/.vim/colors/` or `~/.config/nvim/colors/`;
+- [WezTerm](https://enot-theme.github.io/wezterm/): copy [dist/wezterm/*.toml](dist/wezterm) into `~/.config/wezterm/colors/`;
+- [Midnight Commander](https://enot-theme.github.io/mc/): copy [dist/mc/*.ini](dist/mc) into `~/.local/share/mc/skins/`;
+- [ranger](https://enot-theme.github.io/ranger/): copy [dist/ranger/colorschemes/enot.py](dist/ranger/colorschemes/enot.py) into `~/.config/ranger/colorschemes/`;
+- [Telegram Desktop](https://enot-theme.github.io/telegram/): open [dist/telegram/enot-*.tdesktop-theme](dist/telegram) via Settings > Chat settings > Choose from file.
 
 ## Add a port
 
 One spec renders every port under [ports/](ports): a port is a directory
 with a `port.json` manifest - a `${var}` template (no code), a small
 `render.py` for formats that need logic, or a verbatim file. The build
-renders it, registers it on the [coverage matrix](https://enot-theme.github.io/apps/)
-and checks that every color literal in every output belongs to the spec.
+renders it into `dist/<app>/`, registers it on the
+[coverage matrix](https://enot-theme.github.io/apps/) and checks that
+every color literal in every output belongs to the spec.
 
 ## Method
 

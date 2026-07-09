@@ -7,8 +7,8 @@
   "guarantee": "full",
   "module": "render.py",
   "outputs": [
-    {"theme": "dark", "path": "telegram/enot-dark.tdesktop-theme"},
-    {"theme": "light", "path": "telegram/enot-light.tdesktop-theme"}
+    {"theme": "dark", "path": "dist/telegram/enot-dark.tdesktop-theme"},
+    {"theme": "light", "path": "dist/telegram/enot-light.tdesktop-theme"}
   ],
   "install": "Settings > Chat settings > Choose from file, or open the file in any chat"
 }

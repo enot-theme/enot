@@ -8,10 +8,10 @@
   "module": "render.py",
   "c256_pattern": "color(\\d+)",
   "outputs": [
-    {"path": "mc/enot-dark-16M.ini"},
-    {"path": "mc/enot-dark256.ini"},
-    {"path": "mc/enot-light-16M.ini"},
-    {"path": "mc/enot-light256.ini"}
+    {"path": "dist/mc/enot-dark-16M.ini"},
+    {"path": "dist/mc/enot-dark256.ini"},
+    {"path": "dist/mc/enot-light-16M.ini"},
+    {"path": "dist/mc/enot-light256.ini"}
   ],
   "install": "copy into ~/.local/share/mc/skins/ and select in Options > Appearance or mc -S enot-dark-16M"
 }

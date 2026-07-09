@@ -42,25 +42,25 @@ The key trade-off: an iso-lightness palette is impossible in principle - for sev
 - palette.py - shared constants, LCh to sRGB math and the theme assembly from enot.json;
 - optimize.py - the accents and ANSI 16 optimizer (enot.json);
 - resolve.py - the colors.json spec (three color depths);
-- build.py - the port engine: renders every port under ports/ from the spec;
+- build.py - the port engine: renders every port under ports/ into dist/ from the spec;
 - assets.py - the README design reference SVGs;
 - cvd.py - the dichromacy simulation matrices and CIEDE2000;
 - check.py - the single regression over invariants and artifacts;
 - sitedata.py - the site data bundle: precomputed simulations, metrics, gates, the port registry;
-- make with no arguments prints the targets, make build runs the full cycle.
+- the modules live in pipeline/; make with no arguments prints the targets, make build runs the full cycle.
 
 ## Installation
 
-vim and neovim: copy vim/colors/enot.vim to ~/.vim/colors/ or ~/.config/nvim/colors/, then:
+vim and neovim: copy dist/vim/colors/enot.vim to ~/.vim/colors/ or ~/.config/nvim/colors/, then:
 
     set termguicolors
     set background=dark   " or light
     colorscheme enot
 
-wezterm: copy wezterm/*.toml to ~/.config/wezterm/colors/ and set color_scheme = "enot-dark" or "enot-light".
+wezterm: copy dist/wezterm/*.toml to ~/.config/wezterm/colors/ and set color_scheme = "enot-dark" or "enot-light".
 
-mc: copy mc/*.ini to ~/.local/share/mc/skins/ and pick the skin in Options > Appearance, or run mc -S enot-dark-16M. The -16M variants are truecolor (mc >= 4.8.19 built with S-Lang, COLORTERM=truecolor); the 256 variants carry the xterm-256 depth of the spec, solved by the same max-min optimizer; on a terminal without truecolor mc does not degrade a skin per color but falls back to the default skin entirely, so the 256 variant is required there.
+mc: copy dist/mc/*.ini to ~/.local/share/mc/skins/ and pick the skin in Options > Appearance, or run mc -S enot-dark-16M. The -16M variants are truecolor (mc >= 4.8.19 built with S-Lang, COLORTERM=truecolor); the 256 variants carry the xterm-256 depth of the spec, solved by the same max-min optimizer; on a terminal without truecolor mc does not degrade a skin per color but falls back to the default skin entirely, so the 256 variant is required there.
 
-ranger: copy ranger/colorschemes/enot.py to ~/.config/ranger/colorschemes/ and add set colorscheme enot to rc.conf. The scheme assigns roles via ANSI indices 0-15 and takes the actual colors from the terminal palette (wezterm/enot-*.toml), so a single file serves both themes; requires ranger >= 1.9.3.
+ranger: copy dist/ranger/colorschemes/enot.py to ~/.config/ranger/colorschemes/ and add set colorscheme enot to rc.conf. The scheme assigns roles via ANSI indices 0-15 and takes the actual colors from the terminal palette (wezterm/enot-*.toml), so a single file serves both themes; requires ranger >= 1.9.3.
 
-Telegram Desktop: open telegram/enot-dark.tdesktop-theme or telegram/enot-light.tdesktop-theme via Settings > Chat settings > Choose from file, or send the file to any chat and click it - Telegram previews the theme before applying. The file is a theme package: a full palette (586 entries) rendered from the spec plus a solid bg0 background that replaces the wallpaper, so chats sit on a specification color; translucent entries (shadows, scrims, selection overlays) carry an alpha channel over specification colors.
+Telegram Desktop: open dist/telegram/enot-dark.tdesktop-theme or dist/telegram/enot-light.tdesktop-theme via Settings > Chat settings > Choose from file, or send the file to any chat and click it - Telegram previews the theme before applying. The file is a theme package: a full palette (586 entries) rendered from the spec plus a solid bg0 background that replaces the wallpaper, so chats sit on a specification color; translucent entries (shadows, scrims, selection overlays) carry an alpha channel over specification colors.

@@ -20,4 +20,4 @@ jobs:
       - run: make build
       # committed artifacts must equal a fresh render of the spec
       - name: artifacts are up to date
-        run: git diff --exit-code -- enot.json colors.json ports/registry.json vim wezterm mc ranger docs/assets
+        run: git diff --exit-code -- pipeline/enot.json colors.json ports/registry.json dist docs/assets

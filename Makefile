@@ -7,24 +7,24 @@ help: ## show this help
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ {printf "  %-10s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
 optimize: ## recompute the theme accents and ANSI slots (enot.json)
-	python3 optimize.py
+	python3 pipeline/optimize.py
 
 resolve: ## color spec at three depths (colors.json)
-	python3 resolve.py
+	python3 pipeline/resolve.py
 
 render: ## render every port from colors.json (ports/*)
-	python3 build.py
+	python3 pipeline/build.py
 
 assets: ## README design reference SVGs (docs/assets/*)
-	python3 assets.py
+	python3 pipeline/assets.py
 
 check: ## regression: invariants of colors.json and artifacts
-	python3 check.py
+	python3 pipeline/check.py
 
 build: optimize resolve render assets check ## full pipeline (CI gate)
 
 sitedata: ## emit the site data bundle into build/site (needs build)
-	python3 sitedata.py
+	python3 pipeline/sitedata.py
 
 all: build ## full pipeline; the site is a separate Astro repo
 

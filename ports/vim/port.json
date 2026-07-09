@@ -8,7 +8,7 @@
   "module": "render.py",
   "c256_pattern": "cterm[fb]g=(\\d+)",
   "outputs": [
-    {"path": "vim/colors/enot.vim"}
+    {"path": "dist/vim/colors/enot.vim"}
   ],
   "install": "copy into ~/.vim/colors/ or ~/.config/nvim/colors/"
 }

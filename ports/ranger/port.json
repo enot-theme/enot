@@ -7,7 +7,7 @@
   "guarantee": "ansi",
   "src": "scheme.py",
   "outputs": [
-    {"path": "ranger/colorschemes/enot.py"}
+    {"path": "dist/ranger/colorschemes/enot.py"}
   ],
   "install": "copy into ~/.config/ranger/colorschemes/ and add \"set colorscheme enot\" to rc.conf; ranger >= 1.9.3"
 }

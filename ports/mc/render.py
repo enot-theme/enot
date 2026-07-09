@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""mc skin port: mc/enot-{dark,light}{-16M,256}.ini.
+"""mc skin port: dist/mc/enot-{dark,light}{-16M,256}.ini.
 
 Module port for the enot build. render(spec) returns {path: text}.
 The 16M skins are truecolor (mc >= 4.8.19 with S-Lang); the 256 skins
@@ -199,5 +199,5 @@ def render(spec):
     for mode in ("dark", "light"):
         roles = spec["themes"][mode]["roles"]
         for depth, suffix in (("16M", "-16M"), ("256", "256")):
-            out[f"mc/{SLUG}-{mode}{suffix}.ini"] = skin(roles, mode, depth)
+            out[f"dist/mc/{SLUG}-{mode}{suffix}.ini"] = skin(roles, mode, depth)
     return out

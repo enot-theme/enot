@@ -50,6 +50,6 @@ def render(spec):
     for theme in ("dark", "light"):
         t = spec["themes"][theme]
         text = tmpl.substitute(namespace(theme, t))
-        out[f"telegram/enot-{theme}.tdesktop-theme"] = theme_zip(
+        out[f"dist/telegram/enot-{theme}.tdesktop-theme"] = theme_zip(
             text, solid_png(t["roles"]["bg0"]["hex"]))
     return out

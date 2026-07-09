@@ -293,9 +293,9 @@ def main():
         result["ansi"][mode] = {n: list(c["lch"])
                                 for n, c in chosen16.items()}
         report_chosen(f"{mode} ansi16", chosen16, bg)
-    with open("enot.json", "w") as f:
+    with open("pipeline/enot.json", "w") as f:
         json.dump(result, f, indent=2)
-    print("wrote enot.json")
+    print("wrote pipeline/enot.json")
 
 
 if __name__ == "__main__":
