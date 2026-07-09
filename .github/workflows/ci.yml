@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          # match the interpreter the committed artifacts were built
+          # with, so the up-to-date diff below is not tripped by
+          # cross-version float rounding in the optimizer
+          python-version: "3.14"
+      # make build ends in check.py, which fails the job on any
+      # metric or artifact-conformance violation. Pure stdlib, no deps.
+      - run: make build
+      # committed artifacts must equal a fresh render of the spec
+      - name: artifacts are up to date
+        run: git diff --exit-code -- colors.json ports/registry.json vim wezterm mc ranger
