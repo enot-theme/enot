@@ -1,0 +1,1056 @@
+[
+  {
+    "slug": "mokh",
+    "name": "moss",
+    "desc": "closest to everforest: green undergrowth, warm beige text",
+    "cvd_hard": false,
+    "dark": {
+      "bg0": "#252a26",
+      "bg1": "#2f3430",
+      "bg2": "#3b403c",
+      "bg3": "#4b504c",
+      "fg0": "#d9d1bb",
+      "fg1": "#b6b09f",
+      "comment": "#7a837c",
+      "linenr": "#59605a",
+      "red": "#e1a0a0",
+      "orange": "#daa58d",
+      "yellow": "#c3ae84",
+      "green": "#a2b78c",
+      "aqua": "#7ebda6",
+      "blue": "#6abdcb",
+      "purple": "#d7a1c0",
+      "_lch": {
+        "red": [
+          72,
+          26.0,
+          22
+        ],
+        "orange": [
+          72,
+          26.0,
+          50
+        ],
+        "yellow": [
+          72,
+          24.7,
+          88
+        ],
+        "green": [
+          72,
+          24.7,
+          128
+        ],
+        "aqua": [
+          72,
+          26.0,
+          168
+        ],
+        "blue": [
+          72,
+          26.0,
+          215
+        ],
+        "purple": [
+          72,
+          26.0,
+          342
+        ]
+      },
+      "_meta": {
+        "bg": [
+          16.5,
+          3.5,
+          150
+        ],
+        "fg": [
+          84,
+          12,
+          95
+        ],
+        "acc": [
+          72,
+          26
+        ]
+      }
+    },
+    "light": {
+      "bg0": "#f5f2ea",
+      "bg1": "#e8e5de",
+      "bg2": "#d8d6ce",
+      "bg3": "#c5c2bb",
+      "fg0": "#465048",
+      "fg1": "#646d66",
+      "comment": "#9c988d",
+      "linenr": "#b4b0a6",
+      "red": "#a0585a",
+      "orange": "#985f45",
+      "yellow": "#7f6b39",
+      "green": "#5b7544",
+      "aqua": "#277a61",
+      "blue": "#007887",
+      "purple": "#965a7e",
+      "_lch": {
+        "red": [
+          46,
+          32.0,
+          22
+        ],
+        "orange": [
+          46,
+          32.0,
+          50
+        ],
+        "yellow": [
+          46,
+          30.4,
+          88
+        ],
+        "green": [
+          46,
+          30.4,
+          128
+        ],
+        "aqua": [
+          46,
+          32.0,
+          168
+        ],
+        "blue": [
+          46,
+          32.0,
+          215
+        ],
+        "purple": [
+          46,
+          32.0,
+          342
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95.5,
+          4.0,
+          95
+        ],
+        "fg": [
+          33,
+          7,
+          150
+        ],
+        "acc": [
+          46,
+          32
+        ]
+      }
+    }
+  },
+  {
+    "slug": "glina",
+    "name": "clay",
+    "desc": "terracotta and ochre, the warmest one; brown-tinted background",
+    "cvd_hard": false,
+    "dark": {
+      "bg0": "#2f2924",
+      "bg1": "#39322e",
+      "bg2": "#463e3a",
+      "bg3": "#564f4a",
+      "fg0": "#decebc",
+      "fg1": "#baada0",
+      "comment": "#8c7f77",
+      "linenr": "#675c56",
+      "red": "#e69e97",
+      "orange": "#dba583",
+      "yellow": "#c9ad80",
+      "green": "#afb582",
+      "aqua": "#89bba6",
+      "blue": "#8cb6cf",
+      "purple": "#d0a3c4",
+      "_lch": {
+        "red": [
+          72,
+          29.7,
+          30
+        ],
+        "orange": [
+          72,
+          29.7,
+          58
+        ],
+        "yellow": [
+          72,
+          27.0,
+          82
+        ],
+        "green": [
+          72,
+          27.0,
+          112
+        ],
+        "aqua": [
+          72,
+          21.6,
+          165
+        ],
+        "blue": [
+          72,
+          18.9,
+          245
+        ],
+        "purple": [
+          72,
+          24.3,
+          335
+        ]
+      },
+      "_meta": {
+        "bg": [
+          17,
+          4.5,
+          60
+        ],
+        "fg": [
+          83.5,
+          11,
+          75
+        ],
+        "acc": [
+          72,
+          27
+        ]
+      }
+    },
+    "light": {
+      "bg0": "#f7f0e8",
+      "bg1": "#eae3dc",
+      "bg2": "#dad3cc",
+      "bg3": "#c7c0b9",
+      "fg0": "#594b44",
+      "fg1": "#746862",
+      "comment": "#a1978d",
+      "linenr": "#b8afa6",
+      "red": "#a55650",
+      "orange": "#985f3a",
+      "yellow": "#846935",
+      "green": "#6a7238",
+      "aqua": "#3c7861",
+      "blue": "#3b738f",
+      "purple": "#905d82",
+      "_lch": {
+        "red": [
+          46,
+          36.3,
+          30
+        ],
+        "orange": [
+          46,
+          36.3,
+          58
+        ],
+        "yellow": [
+          46,
+          33.0,
+          82
+        ],
+        "green": [
+          46,
+          33.0,
+          112
+        ],
+        "aqua": [
+          46,
+          26.4,
+          165
+        ],
+        "blue": [
+          46,
+          23.1,
+          245
+        ],
+        "purple": [
+          46,
+          29.7,
+          335
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95,
+          4.5,
+          75
+        ],
+        "fg": [
+          33,
+          8,
+          55
+        ],
+        "acc": [
+          46,
+          33
+        ]
+      }
+    }
+  },
+  {
+    "slug": "pepel",
+    "name": "ash",
+    "desc": "almost neutral, restrained like habamax; minimal chroma",
+    "cvd_hard": false,
+    "dark": {
+      "bg0": "#272725",
+      "bg1": "#31302f",
+      "bg2": "#3d3c3b",
+      "bg3": "#4d4c4b",
+      "fg0": "#cfccc4",
+      "fg1": "#aeaba5",
+      "comment": "#82817e",
+      "linenr": "#5f5e5c",
+      "red": "#d0a3a3",
+      "orange": "#caa694",
+      "yellow": "#bbad8d",
+      "green": "#9fb496",
+      "aqua": "#86b7b0",
+      "blue": "#91b2cd",
+      "purple": "#bea6c3",
+      "_lch": {
+        "red": [
+          71,
+          18.0,
+          20
+        ],
+        "orange": [
+          71,
+          18.0,
+          55
+        ],
+        "yellow": [
+          71,
+          18.0,
+          90
+        ],
+        "green": [
+          71,
+          18.0,
+          135
+        ],
+        "aqua": [
+          71,
+          18.0,
+          185
+        ],
+        "blue": [
+          71,
+          18.0,
+          255
+        ],
+        "purple": [
+          71,
+          18.0,
+          320
+        ]
+      },
+      "_meta": {
+        "bg": [
+          15.5,
+          1.0,
+          90
+        ],
+        "fg": [
+          82,
+          4,
+          90
+        ],
+        "acc": [
+          71,
+          18
+        ]
+      }
+    },
+    "light": {
+      "bg0": "#f3f2f0",
+      "bg1": "#e6e5e3",
+      "bg2": "#d7d6d3",
+      "bg3": "#c3c2c0",
+      "fg0": "#4b4944",
+      "fg1": "#676562",
+      "comment": "#9a9895",
+      "linenr": "#b2b0ad",
+      "red": "#915d5e",
+      "orange": "#89624c",
+      "yellow": "#786944",
+      "green": "#58714f",
+      "aqua": "#33756d",
+      "blue": "#426f8f",
+      "purple": "#7d6183",
+      "_lch": {
+        "red": [
+          45,
+          23.0,
+          20
+        ],
+        "orange": [
+          45,
+          23.0,
+          55
+        ],
+        "yellow": [
+          45,
+          23.0,
+          90
+        ],
+        "green": [
+          45,
+          23.0,
+          135
+        ],
+        "aqua": [
+          45,
+          23.0,
+          185
+        ],
+        "blue": [
+          45,
+          23.0,
+          255
+        ],
+        "purple": [
+          45,
+          23.0,
+          320
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95.5,
+          1.2,
+          90
+        ],
+        "fg": [
+          31,
+          3,
+          90
+        ],
+        "acc": [
+          45,
+          23
+        ]
+      }
+    }
+  },
+  {
+    "slug": "polyn",
+    "name": "wormwood",
+    "desc": "gray-green, cooler than the rest; sage background",
+    "cvd_hard": false,
+    "dark": {
+      "bg0": "#272a26",
+      "bg1": "#313330",
+      "bg2": "#3d3f3c",
+      "bg3": "#4d504c",
+      "fg0": "#d1cfc0",
+      "fg1": "#b0aea3",
+      "comment": "#7e837c",
+      "linenr": "#5c5f5a",
+      "red": "#daa2a7",
+      "orange": "#d5a693",
+      "yellow": "#bcb089",
+      "green": "#99b997",
+      "aqua": "#7cbcb7",
+      "blue": "#88b7cc",
+      "purple": "#bca9cf",
+      "_lch": {
+        "red": [
+          72,
+          22.0,
+          15
+        ],
+        "orange": [
+          72,
+          22.0,
+          48
+        ],
+        "yellow": [
+          72,
+          22.0,
+          95
+        ],
+        "green": [
+          72,
+          22.0,
+          142
+        ],
+        "aqua": [
+          72,
+          22.0,
+          190
+        ],
+        "blue": [
+          72,
+          18.7,
+          235
+        ],
+        "purple": [
+          72,
+          22.0,
+          310
+        ]
+      },
+      "_meta": {
+        "bg": [
+          16.5,
+          2.8,
+          135
+        ],
+        "fg": [
+          83,
+          8,
+          105
+        ],
+        "acc": [
+          72,
+          22
+        ]
+      }
+    },
+    "light": {
+      "bg0": "#f1f3ed",
+      "bg1": "#e4e6e0",
+      "bg2": "#d5d6d1",
+      "bg3": "#c1c3bd",
+      "fg0": "#4a4f48",
+      "fg1": "#686c66",
+      "comment": "#979991",
+      "linenr": "#afb1aa",
+      "red": "#9b5b62",
+      "orange": "#94604b",
+      "yellow": "#786d3e",
+      "green": "#50764f",
+      "aqua": "#197974",
+      "blue": "#30758d",
+      "purple": "#7a6491",
+      "_lch": {
+        "red": [
+          46,
+          28.0,
+          15
+        ],
+        "orange": [
+          46,
+          28.0,
+          48
+        ],
+        "yellow": [
+          46,
+          28.0,
+          95
+        ],
+        "green": [
+          46,
+          28.0,
+          142
+        ],
+        "aqua": [
+          46,
+          28.0,
+          190
+        ],
+        "blue": [
+          46,
+          23.8,
+          235
+        ],
+        "purple": [
+          46,
+          28.0,
+          310
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95.5,
+          3.0,
+          120
+        ],
+        "fg": [
+          33,
+          5,
+          135
+        ],
+        "acc": [
+          46,
+          28
+        ]
+      }
+    }
+  },
+  {
+    "slug": "okhra",
+    "name": "ochre",
+    "desc": "a gruvbox variation: yellow-brown undertone, cream text, olive and ochre in the accents; light theme on cream paper",
+    "cvd_hard": false,
+    "dark": {
+      "bg0": "#2d2924",
+      "bg1": "#37332d",
+      "bg2": "#433f39",
+      "bg3": "#544f49",
+      "fg0": "#dfd4b3",
+      "fg1": "#bcb399",
+      "comment": "#878075",
+      "linenr": "#635e55",
+      "red": "#e09990",
+      "orange": "#d89f7f",
+      "yellow": "#c3a775",
+      "green": "#b0ae76",
+      "aqua": "#8eb589",
+      "blue": "#6cb6c3",
+      "purple": "#da99b3",
+      "_lch": {
+        "red": [
+          70,
+          30.0,
+          32
+        ],
+        "orange": [
+          70,
+          30.0,
+          55
+        ],
+        "yellow": [
+          70,
+          30.0,
+          84
+        ],
+        "green": [
+          70,
+          30.0,
+          105
+        ],
+        "aqua": [
+          70,
+          28.5,
+          140
+        ],
+        "blue": [
+          70,
+          24.0,
+          215
+        ],
+        "purple": [
+          70,
+          28.5,
+          352
+        ]
+      },
+      "_meta": {
+        "bg": [
+          17,
+          4.5,
+          85
+        ],
+        "fg": [
+          85,
+          18,
+          95
+        ],
+        "acc": [
+          70,
+          30
+        ]
+      }
+    },
+    "light": {
+      "bg0": "#f9f0d8",
+      "bg1": "#ece4cb",
+      "bg2": "#dcd4bc",
+      "bg3": "#c9c1a9",
+      "fg0": "#50483f",
+      "fg1": "#6c645d",
+      "comment": "#9d988c",
+      "linenr": "#b4b0a6",
+      "red": "#a1554c",
+      "orange": "#975c3a",
+      "yellow": "#81672d",
+      "green": "#6e6e2e",
+      "aqua": "#487545",
+      "blue": "#007684",
+      "purple": "#9c5473",
+      "_lch": {
+        "red": [
+          45,
+          36.0,
+          32
+        ],
+        "orange": [
+          45,
+          36.0,
+          55
+        ],
+        "yellow": [
+          45,
+          36.0,
+          84
+        ],
+        "green": [
+          45,
+          36.0,
+          105
+        ],
+        "aqua": [
+          45,
+          34.2,
+          140
+        ],
+        "blue": [
+          45,
+          28.8,
+          215
+        ],
+        "purple": [
+          45,
+          34.2,
+          352
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95,
+          13,
+          95
+        ],
+        "fg": [
+          31,
+          7,
+          75
+        ],
+        "acc": [
+          45,
+          36
+        ]
+      }
+    }
+  },
+  {
+    "slug": "kremen",
+    "name": "flint",
+    "desc": "gruvbox on neutral stone: gray backgrounds like #282828, warm text, the highest accent chroma",
+    "cvd_hard": false,
+    "dark": {
+      "bg0": "#292826",
+      "bg1": "#323130",
+      "bg2": "#3e3d3c",
+      "bg3": "#4e4d4c",
+      "fg0": "#e2d7b5",
+      "fg1": "#beb69c",
+      "comment": "#83817e",
+      "linenr": "#5f5e5c",
+      "red": "#e3988e",
+      "orange": "#da9e7d",
+      "yellow": "#c5a771",
+      "green": "#b0ae72",
+      "aqua": "#8cb687",
+      "blue": "#66b7c5",
+      "purple": "#dc97b4",
+      "_lch": {
+        "red": [
+          70,
+          32.0,
+          32
+        ],
+        "orange": [
+          70,
+          32.0,
+          55
+        ],
+        "yellow": [
+          70,
+          32.0,
+          84
+        ],
+        "green": [
+          70,
+          32.0,
+          105
+        ],
+        "aqua": [
+          70,
+          30.4,
+          140
+        ],
+        "blue": [
+          70,
+          25.6,
+          215
+        ],
+        "purple": [
+          70,
+          30.4,
+          352
+        ]
+      },
+      "_meta": {
+        "bg": [
+          16,
+          1.0,
+          85
+        ],
+        "fg": [
+          86,
+          18,
+          95
+        ],
+        "acc": [
+          70,
+          32
+        ]
+      }
+    },
+    "light": {
+      "bg0": "#f4f2ee",
+      "bg1": "#e7e5e1",
+      "bg2": "#d7d6d2",
+      "bg3": "#c4c2be",
+      "fg0": "#48443e",
+      "fg1": "#64605c",
+      "comment": "#9b9893",
+      "linenr": "#b3b0ab",
+      "red": "#a15148",
+      "orange": "#965935",
+      "yellow": "#806427",
+      "green": "#6b6b28",
+      "aqua": "#437340",
+      "blue": "#007381",
+      "purple": "#9b4f71",
+      "_lch": {
+        "red": [
+          44,
+          38.0,
+          32
+        ],
+        "orange": [
+          44,
+          38.0,
+          55
+        ],
+        "yellow": [
+          44,
+          38.0,
+          84
+        ],
+        "green": [
+          44,
+          38.0,
+          105
+        ],
+        "aqua": [
+          44,
+          36.1,
+          140
+        ],
+        "blue": [
+          44,
+          30.4,
+          215
+        ],
+        "purple": [
+          44,
+          36.1,
+          352
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95.5,
+          2.0,
+          90
+        ],
+        "fg": [
+          29,
+          4,
+          80
+        ],
+        "acc": [
+          44,
+          38
+        ]
+      }
+    }
+  },
+  {
+    "slug": "enot",
+    "name": "enot",
+    "desc": "flint rebuilt for dichromacy: a lightness corridor instead of a single circle, max-min dE00 over normal vision, protanopia and deuteranopia (Vienot 1999); plus 16 ANSI colors for the terminal",
+    "cvd_hard": true,
+    "dark": {
+      "bg0": "#292826",
+      "bg1": "#323130",
+      "bg2": "#3e3d3c",
+      "bg3": "#4e4d4c",
+      "fg0": "#e2d7b5",
+      "fg1": "#beb69c",
+      "comment": "#83817e",
+      "linenr": "#5f5e5c",
+      "red": "#daa3a2",
+      "orange": "#b28e7d",
+      "yellow": "#ae925d",
+      "green": "#bbb97d",
+      "aqua": "#78d0c2",
+      "blue": "#65b7c6",
+      "purple": "#cb87a2",
+      "_lch": {
+        "red": [
+          72,
+          22,
+          23
+        ],
+        "orange": [
+          62,
+          18,
+          53
+        ],
+        "yellow": [
+          62,
+          32,
+          84
+        ],
+        "green": [
+          74,
+          32,
+          106
+        ],
+        "aqua": [
+          78,
+          30,
+          182
+        ],
+        "blue": [
+          70,
+          26,
+          216
+        ],
+        "purple": [
+          64,
+          30,
+          353
+        ]
+      },
+      "_meta": {
+        "bg": [
+          16,
+          1.0,
+          85
+        ],
+        "fg": [
+          86,
+          18,
+          95
+        ],
+        "acc": null
+      }
+    },
+    "light": {
+      "bg0": "#f4f2ee",
+      "bg1": "#e7e5e1",
+      "bg2": "#d7d6d2",
+      "bg3": "#c4c2be",
+      "fg0": "#48443e",
+      "fg1": "#64605c",
+      "comment": "#9b9893",
+      "linenr": "#b3b0ab",
+      "red": "#a95359",
+      "orange": "#743d19",
+      "yellow": "#68573d",
+      "green": "#6a6c28",
+      "aqua": "#177657",
+      "blue": "#187886",
+      "purple": "#9a5073",
+      "_lch": {
+        "red": [
+          46,
+          38,
+          20
+        ],
+        "orange": [
+          32,
+          38,
+          56
+        ],
+        "yellow": [
+          38,
+          18,
+          81
+        ],
+        "green": [
+          44,
+          38,
+          106
+        ],
+        "aqua": [
+          44,
+          36,
+          164
+        ],
+        "blue": [
+          46,
+          26,
+          216
+        ],
+        "purple": [
+          44,
+          36,
+          350
+        ]
+      },
+      "_meta": {
+        "bg": [
+          95.5,
+          2.0,
+          90
+        ],
+        "fg": [
+          29,
+          4,
+          80
+        ],
+        "acc": null
+      }
+    },
+    "ansi": {
+      "dark": {
+        "black": "#45423c",
+        "red": "#cb938b",
+        "yellow": "#a38e6a",
+        "green": "#b0a76c",
+        "cyan": "#4caaa2",
+        "blue": "#4eb3c7",
+        "magenta": "#d18da8",
+        "br_red": "#e0b1a5",
+        "br_yellow": "#fcdfa5",
+        "br_green": "#c6c487",
+        "br_cyan": "#7ce2dc",
+        "br_blue": "#75e1f4",
+        "br_magenta": "#f0b7cd",
+        "br_black": "#6f6d6a",
+        "white": "#d7d1c6",
+        "br_white": "#f8f3ec"
+      },
+      "light": {
+        "br_green": "#50530f",
+        "red": "#a25756",
+        "yellow": "#836933",
+        "green": "#5c5b37",
+        "cyan": "#2c7552",
+        "blue": "#0d7381",
+        "magenta": "#944c6b",
+        "br_red": "#632e28",
+        "br_yellow": "#493603",
+        "br_cyan": "#105958",
+        "br_blue": "#06444d",
+        "br_magenta": "#5d1c3e",
+        "black": "#4a4641",
+        "br_black": "#7b7670",
+        "white": "#cac6bf",
+        "br_white": "#eeeeee"
+      }
+    }
+  }
+]
