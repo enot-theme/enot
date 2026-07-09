@@ -11,8 +11,8 @@ never hand-pick colors or edit generated artifacts by hand.
 - resolve.py -> colors.json: the color specification - every role at three depths (hex, xterm-256, ANSI slot); 256 is solved by the same solve over candidates from the xterm grid with truecolor anchors (naive quantization merges roles down to dE00 0); the single source of colors for renderers;
 - check.py - the single regression: metric thresholds of colors.json per depth + every color literal in artifacts belongs to the specification; cvd.py -> cvd.html (report only);
 - build.py - the port engine: renders every port under ports/ from colors.json (no color math), writes artifacts to their install paths and ports/registry.json (the coverage manifest). A port is ports/<app>/ with a port.json manifest of one kind: template (a ${var} file rendered per theme via string.Template, no Python - the path for the long tail of simple key=value formats, e.g. wezterm -> wezterm/*.toml); module (a render.py exposing render(spec) -> {path: text}, for formats whose emission needs logic - vim -> vim/colors/enot.vim, mc -> mc/*.ini with dark/light x truecolor-16M and 256, since mc without truecolor falls back to default entirely so the 256 variant is mandatory); static (a file copied verbatim - ranger -> ranger/colorschemes/enot.py, ANSI indices 0-15 on the terminal palette, one file for both themes, ranger >= 1.9.3). A new simple app is one template + one manifest, no Python;
-- site.py -> site/ (invariants and metrics on index come from colors.json and check.CHECKS);
-- make build - full pipeline without the site (optimize palettes resolve report render check), the CI gate; make all - build + site; make deploy - site rebuild + commit + push. CI (.github/workflows/ci.yml) runs make build on push/PR and fails on any check violation or on artifacts not regenerated from the spec.
+- sitedata.py -> build/site/ (site.json bundle + llms.txt/llms-full.txt + downloads): the pipeline's contract with the site. All color math stays here; the bundle carries the vision simulations (cvd.SIM_FUNCS run over enot and gruvbox for every theme/vision, so the live switcher is a lookup not a reimplementation), colors.json metrics, the check.py gates, headline numbers and ports/registry.json. The site never recomputes colors;
+- make build - full pipeline (optimize palettes resolve report render check), the CI gate; make all = build; make sitedata - emit the bundle; make deploy - build + sitedata, then sync the bundle into the Astro site (site/src/data + site/public) and push, whose CI builds and deploys. CI (.github/workflows/ci.yml) runs make build on push/PR and fails on any check violation or on artifacts not regenerated from the spec.
 
 ## Invariants
 
@@ -26,9 +26,12 @@ never hand-pick colors or edit generated artifacts by hand.
 
 ## Site
 
-- site/ - a symlink to the sibling checkout of the separate git repository git@github.com:enot-theme/site.git, GitHub Pages from main, https://enot-theme.github.io/site/ ;
-- site/ is build output: edit only site.py; llms.txt and llms-full.txt are generated too;
-- wezterm install snippets - config_builder style, no top-level return in examples.
+- site/ - a symlink to the sibling checkout of git@github.com:enot-theme/site.git, an Astro project (not build output); served at https://enot-theme.github.io/site/ ;
+- Pages source is GitHub Actions (not a branch): the site repo's deploy workflow runs astro build and publishes; base is /site, build.format 'file' keeps flat .html URLs;
+- the site owns presentation (Astro pages, CSS, install prose in src/data/install.ts); the pipeline owns numbers (src/data/site.json, synced by make deploy). Edit prose/layout in the site repo, never hand-edit src/data/site.json or public/ scheme files;
+- apps.html renders the coverage matrix from the port registry in the bundle; a new port appears there automatically;
+- wezterm install snippets - config_builder style, no top-level return in examples;
+- analytics: GoatCounter, code in site/src/data/config.ts (register the code to receive data; '' disables).
 
 ## Language and commits
 
@@ -37,5 +40,5 @@ never hand-pick colors or edit generated artifacts by hand.
 
 ## Documentation
 
-- docs/enot.en.md is the single method document; when the method or numbers change, update it and llms-full (by rebuilding the site);
+- docs/enot.en.md is the single method document; when the method or numbers change, update it, then make sitedata regenerates llms-full.txt and make deploy publishes it;
 - key numbers: min dE00 8.3 (accents) and 7.2 (ANSI) in truecolor, 7.3/2.2 (256 accents, dark/light); the site takes numbers from colors.json automatically; in write-ups verify against metrics.

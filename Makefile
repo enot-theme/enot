@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := help
-# site matches the directory name; ports render from ports/*/port.json
-.PHONY: help optimize palettes resolve report render check build site all deploy
+# the site is the sibling Astro repo (symlink site -> ../site); the
+# pipeline feeds it a data bundle, the site repo's CI builds and deploys
+.PHONY: help optimize palettes resolve report render check build sitedata all deploy
 
 help: ## show this help
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ {printf "  %-10s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -23,13 +24,16 @@ render: ## render every port from colors.json (ports/*)
 check: ## regression: invariants of colors.json and artifacts
 	python3 check.py
 
-build: optimize palettes resolve report render check ## full pipeline without the site (CI gate)
+build: optimize palettes resolve report render check ## full pipeline (CI gate)
 
-site: ## theme site (site/*.html + scheme files)
-	python3 site.py
+sitedata: ## emit the site data bundle into build/site (needs build)
+	python3 sitedata.py
 
-all: build site ## full cycle including the site
+all: build ## full pipeline; the site is a separate Astro repo
 
-deploy: site ## rebuild the site and publish to GitHub Pages
+deploy: build sitedata ## sync the data bundle into the Astro site and push (site CI deploys)
+	cp build/site/site.json site/src/data/site.json
+	cp build/site/llms.txt build/site/llms-full.txt site/public/
+	cp build/site/downloads/* site/public/
 	cd site && git add -A && (git diff --cached --quiet \
-		|| (git commit -s -m "chore: rebuild site" && git push))
+		|| (git commit -s -m "chore: sync theme data" && git push))
