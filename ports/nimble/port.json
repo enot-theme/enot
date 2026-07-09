@@ -1,0 +1,14 @@
+{
+  "app": "nimble",
+  "name": "Nimble Commander",
+  "category": "file-manager",
+  "kind": "template",
+  "depth": "16M",
+  "guarantee": "full",
+  "template": "theme.json.tmpl",
+  "outputs": [
+    {"theme": "dark", "path": "dist/nimble/enot-dark.json"},
+    {"theme": "light", "path": "dist/nimble/enot-light.json"}
+  ],
+  "install": "import via Settings > Themes, then set both in automatic switching"
+}

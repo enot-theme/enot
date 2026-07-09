@@ -1,0 +1,14 @@
+{
+  "app": "sublime",
+  "name": "Sublime Text",
+  "category": "editor",
+  "kind": "template",
+  "depth": "16M",
+  "guarantee": "full",
+  "template": "scheme.sublime-color-scheme.tmpl",
+  "outputs": [
+    {"theme": "dark", "path": "dist/sublime/enot-dark.sublime-color-scheme"},
+    {"theme": "light", "path": "dist/sublime/enot-light.sublime-color-scheme"}
+  ],
+  "install": "copy into Packages/User (Preferences > Browse Packages), then UI: Select Color Scheme"
+}

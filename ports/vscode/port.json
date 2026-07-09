@@ -1,0 +1,13 @@
+{
+  "app": "vscode",
+  "name": "VS Code",
+  "category": "editor",
+  "kind": "module",
+  "depth": "16M",
+  "guarantee": "full",
+  "module": "render.py",
+  "outputs": [
+    {"path": "dist/vscode/enot.vsix"}
+  ],
+  "install": "code --install-extension enot.vsix, or Extensions > ... > Install from VSIX"
+}

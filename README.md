@@ -38,6 +38,9 @@ metrics embedded.
 
 - [vim / neovim](https://enot-theme.github.io/vim/): copy [dist/vim/colors/enot.vim](dist/vim/colors/enot.vim) into `~/.vim/colors/` or `~/.config/nvim/colors/`;
 - [lightline](https://enot-theme.github.io/lightline/): copy [dist/lightline/.../enot.vim](dist/lightline/autoload/lightline/colorscheme/enot.vim) into `~/.vim/autoload/lightline/colorscheme/`;
+- [Sublime Text](https://enot-theme.github.io/sublime/): copy [dist/sublime/*.sublime-color-scheme](dist/sublime) into `Packages/User/`;
+- [VS Code](https://enot-theme.github.io/vscode/): `code --install-extension` [dist/vscode/enot.vsix](dist/vscode/enot.vsix);
+- [Nimble Commander](https://enot-theme.github.io/nimble/): import [dist/nimble/enot-*.json](dist/nimble) via Settings > Themes;
 - [WezTerm](https://enot-theme.github.io/wezterm/): copy [dist/wezterm/*.toml](dist/wezterm) into `~/.config/wezterm/colors/`;
 - [Midnight Commander](https://enot-theme.github.io/mc/): copy [dist/mc/*.ini](dist/mc) into `~/.local/share/mc/skins/`;
 - [ranger](https://enot-theme.github.io/ranger/): copy [dist/ranger/colorschemes/enot.py](dist/ranger/colorschemes/enot.py) into `~/.config/ranger/colorschemes/`;

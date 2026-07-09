@@ -39,6 +39,25 @@
       ]
     },
     {
+      "app": "nimble",
+      "name": "Nimble Commander",
+      "category": "file-manager",
+      "kind": "template",
+      "depth": "16M",
+      "guarantee": "full",
+      "install": "import via Settings > Themes, then set both in automatic switching",
+      "outputs": [
+        {
+          "theme": "dark",
+          "path": "dist/nimble/enot-dark.json"
+        },
+        {
+          "theme": "light",
+          "path": "dist/nimble/enot-light.json"
+        }
+      ]
+    },
+    {
       "app": "ranger",
       "name": "ranger",
       "category": "file-manager",
@@ -49,6 +68,25 @@
       "outputs": [
         {
           "path": "dist/ranger/colorschemes/enot.py"
+        }
+      ]
+    },
+    {
+      "app": "sublime",
+      "name": "Sublime Text",
+      "category": "editor",
+      "kind": "template",
+      "depth": "16M",
+      "guarantee": "full",
+      "install": "copy into Packages/User (Preferences > Browse Packages), then UI: Select Color Scheme",
+      "outputs": [
+        {
+          "theme": "dark",
+          "path": "dist/sublime/enot-dark.sublime-color-scheme"
+        },
+        {
+          "theme": "light",
+          "path": "dist/sublime/enot-light.sublime-color-scheme"
         }
       ]
     },
@@ -82,6 +120,20 @@
       "outputs": [
         {
           "path": "dist/vim/colors/enot.vim"
+        }
+      ]
+    },
+    {
+      "app": "vscode",
+      "name": "VS Code",
+      "category": "editor",
+      "kind": "module",
+      "depth": "16M",
+      "guarantee": "full",
+      "install": "code --install-extension enot.vsix, or Extensions > ... > Install from VSIX",
+      "outputs": [
+        {
+          "path": "dist/vscode/enot.vsix"
         }
       ]
     },
