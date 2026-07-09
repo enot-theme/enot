@@ -8,6 +8,7 @@
       "kind": "module",
       "depth": "16M+256",
       "guarantee": "full",
+      "install": "copy into ~/.local/share/mc/skins/ and select in Options > Appearance or mc -S enot-dark-16M",
       "outputs": [
         {
           "path": "mc/enot-dark-16M.ini"
@@ -30,6 +31,7 @@
       "kind": "static",
       "depth": "ansi",
       "guarantee": "ansi",
+      "install": "copy into ~/.config/ranger/colorschemes/ and add \"set colorscheme enot\" to rc.conf; ranger >= 1.9.3",
       "outputs": [
         {
           "path": "ranger/colorschemes/enot.py"
@@ -43,6 +45,7 @@
       "kind": "module",
       "depth": "16M",
       "guarantee": "full",
+      "install": "Settings > Chat settings > Choose from file, or open the file in any chat",
       "outputs": [
         {
           "theme": "dark",
@@ -61,6 +64,7 @@
       "kind": "module",
       "depth": "16M+256+ansi",
       "guarantee": "full",
+      "install": "copy into ~/.vim/colors/ or ~/.config/nvim/colors/",
       "outputs": [
         {
           "path": "vim/colors/enot.vim"
@@ -74,6 +78,7 @@
       "kind": "template",
       "depth": "16M",
       "guarantee": "full",
+      "install": "copy into ~/.config/wezterm/colors/ and set color_scheme = \"enot-dark\"",
       "outputs": [
         {
           "theme": "dark",
