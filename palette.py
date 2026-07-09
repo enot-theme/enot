@@ -4,8 +4,7 @@
 Shared constants (roles, ANSI order, slug), LCh -> sRGB conversion
 with gamut clamping, the "flint" base (fixed lightness steps for
 backgrounds and text) and enot_variant(), which assembles the theme
-from the optimizer output enot.json. The exploratory palette variants
-and HTML previews were removed; they live in git history.
+from the optimizer output enot.json.
 """
 
 import json
