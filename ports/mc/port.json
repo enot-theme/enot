@@ -6,6 +6,7 @@
   "depth": "16M+256",
   "guarantee": "full",
   "module": "render.py",
+  "c256_pattern": "color(\\d+)",
   "outputs": [
     {"path": "mc/enot-dark-16M.ini"},
     {"path": "mc/enot-dark256.ini"},

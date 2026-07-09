@@ -6,6 +6,7 @@
   "depth": "16M+256+ansi",
   "guarantee": "full",
   "module": "render.py",
+  "c256_pattern": "cterm[fb]g=(\\d+)",
   "outputs": [
     {"path": "vim/colors/enot.vim"}
   ],

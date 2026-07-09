@@ -7,6 +7,12 @@ tiers do not overlap, in the light theme bright colors are darker
 than normal, and every color literal in the generated themes belongs
 to the specification. Exits 1 on any violation.
 
+Which artifacts to scan and how is derived from ports/*/port.json:
+a depth with "16M" means every hex literal must come from the spec,
+a "c256_pattern" in the manifest extracts xterm-256 indexes to
+verify, and an ANSI-only depth means the artifact must carry no hex
+at all. A new port is checked without touching this file.
+
 256 thresholds are below the truecolor ones and differ per theme:
 the xterm-256 grid is sparse in the muted earthy region, and the
 light theme at 4.5:1 contrast hits the physical limit (the
@@ -14,6 +20,7 @@ aqua-blue pair).
 """
 
 import json
+import os
 import re
 import sys
 
@@ -36,14 +43,12 @@ CHECKS = [
     ("*", "256", "red_chroma", 21.5),
 ]
 
-# artifact -> which literals it may contain
-HEX_ARTIFACTS = ["vim/colors/enot.vim", "wezterm/enot-dark.toml",
-                 "wezterm/enot-light.toml", "mc/enot-dark-16M.ini",
-                 "mc/enot-light-16M.ini"]
-C256_ARTIFACTS = {"vim/colors/enot.vim": r"cterm[fb]g=(\d+)",
-                  "mc/enot-dark256.ini": r"color(\d+)",
-                  "mc/enot-light256.ini": r"color(\d+)"}
-NO_HEX = ["ranger/colorschemes/enot.py"]
+def port_manifests():
+    for app in sorted(os.listdir("ports")):
+        path = os.path.join("ports", app, "port.json")
+        if os.path.isfile(path):
+            with open(path) as f:
+                yield json.load(f)
 
 
 def fail(msgs, cond, text):
@@ -73,19 +78,24 @@ def allowed_sets(spec):
 
 def check_artifacts(spec, msgs):
     hexes, c256 = allowed_sets(spec)
-    for path in HEX_ARTIFACTS:
-        found = set(re.findall(r"#[0-9a-fA-F]{6}", open(path).read()))
-        alien = {h for h in found if h.lower() not in hexes}
-        fail(msgs, not alien, f"{path}: hex from the specification"
-             + (f" (alien: {sorted(alien)})" if alien else ""))
-    for path, pattern in C256_ARTIFACTS.items():
-        found = {int(x) for x in re.findall(pattern, open(path).read())}
-        alien = found - c256
-        fail(msgs, not alien, f"{path}: 256 indexes from the specification"
-             + (f" (alien: {sorted(alien)})" if alien else ""))
-    for path in NO_HEX:
-        clean = not re.search(r"#[0-9a-fA-F]{6}", open(path).read())
-        fail(msgs, clean, f"{path}: ANSI indexes only, no hex")
+    for m in port_manifests():
+        paths = [o["path"] for o in m["outputs"]]
+        for path in paths:
+            text = open(path).read()
+            if "16M" in m["depth"]:
+                found = set(re.findall(r"#[0-9a-fA-F]{6}", text))
+                alien = {h for h in found if h.lower() not in hexes}
+                fail(msgs, not alien, f"{path}: hex from the specification"
+                     + (f" (alien: {sorted(alien)})" if alien else ""))
+            else:
+                clean = not re.search(r"#[0-9a-fA-F]{6}", text)
+                fail(msgs, clean, f"{path}: ANSI indexes only, no hex")
+            if m.get("c256_pattern"):
+                found = {int(x) for x in re.findall(m["c256_pattern"], text)}
+                alien = found - c256
+                fail(msgs, not alien,
+                     f"{path}: 256 indexes from the specification"
+                     + (f" (alien: {sorted(alien)})" if alien else ""))
 
 
 def main():

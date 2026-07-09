@@ -36,11 +36,6 @@ GRUVBOX = {
     "light": ["#cc241d", "#d65d0e", "#d79921", "#98971a",
               "#689d6a", "#458588", "#b16286"],
 }
-DOWNLOADS = ["vim/colors/enot.vim", "wezterm/enot-dark.toml",
-             "wezterm/enot-light.toml", "mc/enot-dark-16M.ini",
-             "mc/enot-light-16M.ini", "mc/enot-dark256.ini",
-             "mc/enot-light256.ini", "ranger/colorschemes/enot.py",
-             "colors.json"]
 
 
 def vision_sets(colors):
@@ -183,7 +178,9 @@ def main():
         f.write(llms_txt(acc, ansi))
     with open(os.path.join(OUT, "llms-full.txt"), "w") as f:
         f.write(llms_full(variant))
-    for src in DOWNLOADS:
+    # downloads = every port artifact plus the spec itself
+    for src in [o["path"] for p in ports["ports"]
+                for o in p["outputs"]] + ["colors.json"]:
         shutil.copy(src, downloads)
     print(OUT)
 
