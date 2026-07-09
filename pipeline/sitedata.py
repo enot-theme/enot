@@ -101,8 +101,11 @@ def llms_txt(acc, ansi, ports):
         f"{ansi} across the 16 ANSI colors, verified against simulated "
         f"protanopia and deuteranopia.",
         width=70, initial_indent="> ", subsequent_indent="> ")
+    # downloads are app-scoped ({app}/{file}): identical basenames across
+    # ports (vim and lightline both ship enot.vim) must not collide
     files = "\n".join(
-        f"- [{os.path.basename(o['path'])}]({b}{os.path.basename(o['path'])})"
+        f"- [{os.path.basename(o['path'])}]"
+        f"({b}{p['app']}/{os.path.basename(o['path'])})"
         f": {p['name']}" + (f", {o['theme']} theme" if "theme" in o else "")
         for p in ports for o in p["outputs"])
     installs = "\n".join(
@@ -180,10 +183,13 @@ def main():
         f.write(llms_txt(acc, ansi, ports["ports"]))
     with open(os.path.join(OUT, "llms-full.txt"), "w") as f:
         f.write(llms_full(variant))
-    # downloads = every port artifact plus the spec itself
-    for src in [o["path"] for p in ports["ports"]
-                for o in p["outputs"]] + ["colors.json"]:
-        shutil.copy(src, downloads)
+    # downloads = every port artifact under its app directory + the spec
+    for p in ports["ports"]:
+        app_dir = os.path.join(downloads, p["app"])
+        os.makedirs(app_dir, exist_ok=True)
+        for o in p["outputs"]:
+            shutil.copy(o["path"], app_dir)
+    shutil.copy("colors.json", downloads)
     print(OUT)
 
 

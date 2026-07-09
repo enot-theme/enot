@@ -2,6 +2,20 @@
   "slug": "enot",
   "ports": [
     {
+      "app": "lightline",
+      "name": "lightline",
+      "category": "statusline",
+      "kind": "module",
+      "depth": "16M+256",
+      "guarantee": "full",
+      "install": "copy into ~/.vim/autoload/lightline/colorscheme/ and set the lightline colorscheme to enot",
+      "outputs": [
+        {
+          "path": "dist/lightline/autoload/lightline/colorscheme/enot.vim"
+        }
+      ]
+    },
+    {
       "app": "mc",
       "name": "Midnight Commander",
       "category": "file-manager",

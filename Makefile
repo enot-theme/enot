@@ -31,6 +31,6 @@ all: build ## full pipeline; the site is a separate Astro repo
 deploy: build sitedata ## sync the data bundle into the Astro site and push (site CI deploys)
 	cp build/site/site.json site/src/data/site.json
 	cp build/site/llms.txt build/site/llms-full.txt site/public/
-	cp build/site/downloads/* site/public/
+	cp -R build/site/downloads/* site/public/
 	cd site && git add -A && (git diff --cached --quiet \
 		|| (git commit -s -m "chore: sync theme data" && git push))

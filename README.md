@@ -37,6 +37,7 @@ metrics embedded.
 ## Install
 
 - [vim / neovim](https://enot-theme.github.io/vim/): copy [dist/vim/colors/enot.vim](dist/vim/colors/enot.vim) into `~/.vim/colors/` or `~/.config/nvim/colors/`;
+- [lightline](https://enot-theme.github.io/lightline/): copy [dist/lightline/.../enot.vim](dist/lightline/autoload/lightline/colorscheme/enot.vim) into `~/.vim/autoload/lightline/colorscheme/`;
 - [WezTerm](https://enot-theme.github.io/wezterm/): copy [dist/wezterm/*.toml](dist/wezterm) into `~/.config/wezterm/colors/`;
 - [Midnight Commander](https://enot-theme.github.io/mc/): copy [dist/mc/*.ini](dist/mc) into `~/.local/share/mc/skins/`;
 - [ranger](https://enot-theme.github.io/ranger/): copy [dist/ranger/colorschemes/enot.py](dist/ranger/colorschemes/enot.py) into `~/.config/ranger/colorschemes/`;

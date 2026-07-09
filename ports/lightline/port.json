@@ -1,0 +1,14 @@
+{
+  "app": "lightline",
+  "name": "lightline",
+  "category": "statusline",
+  "kind": "module",
+  "depth": "16M+256",
+  "guarantee": "full",
+  "module": "render.py",
+  "c256_pattern": "', (\\d+) \\]",
+  "outputs": [
+    {"path": "dist/lightline/autoload/lightline/colorscheme/enot.vim"}
+  ],
+  "install": "copy into ~/.vim/autoload/lightline/colorscheme/ and set the lightline colorscheme to enot"
+}
