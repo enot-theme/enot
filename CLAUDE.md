@@ -41,4 +41,4 @@ never hand-pick colors or edit generated artifacts by hand.
 ## Documentation
 
 - docs/enot.en.md is the single method document; when the method or numbers change, update it, then make sitedata regenerates llms-full.txt and make deploy publishes it;
-- key numbers: min dE00 8.3 (accents) and 7.2 (ANSI) in truecolor, 7.3/2.2 (256 accents, dark/light); the site takes numbers from colors.json automatically; in write-ups verify against metrics.
+- key numbers: min dE00 8.2 (accents) and 7.2 (ANSI) in truecolor, 7.3/2.2 (256 accents, dark/light); the site takes numbers from colors.json automatically; in write-ups verify against metrics.

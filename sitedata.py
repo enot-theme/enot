@@ -19,6 +19,7 @@ the Astro project and pushes it.
 """
 
 import json
+import math
 import os
 import shutil
 
@@ -65,11 +66,25 @@ def build_vision(variant):
     return data
 
 
+def floor1(x):
+    """Floor to one decimal. A ">=" guarantee must never round up: the
+    advertised minimum has to stay at or below the measured worst case
+    (8.27 -> 8.2, never round(8.27, 1) = 8.3)."""
+    return math.floor(x * 10 + 1e-9) / 10
+
+
+def headline_numbers(spec):
+    """Advertised min dE00 for the two truecolor invariants, floored over
+    the worse of dark and light - the numbers behind the site's ">=" cards
+    and the llms.txt summary."""
+    def worst(metric):
+        return floor1(min(spec["metrics"][m]["16M"][metric]
+                          for m in ("dark", "light")))
+    return worst("accents"), worst("ansi16")
+
+
 def bundle(variant, spec, checks, ports):
-    acc = round(min(spec["metrics"][m]["16M"]["accents"]
-                    for m in ("dark", "light")), 1)
-    ansi = round(min(spec["metrics"][m]["16M"]["ansi16"]
-                     for m in ("dark", "light")), 1)
+    acc, ansi = headline_numbers(spec)
     return {
         "slug": SLUG,
         "baseUrl": BASE_URL,
@@ -84,14 +99,14 @@ def bundle(variant, spec, checks, ports):
     }
 
 
-def llms_txt():
+def llms_txt(acc, ansi):
     b = BASE_URL
     return f"""# enot
 
 > An earthy color scheme for vim, WezTerm, Midnight Commander and
 > ranger: dark and light themes, gruvbox character, built in CIELAB
 > and machine-checked to stay distinguishable under color blindness -
-> minimum pairwise CIEDE2000 of 8.3 between syntax accents and 7.2
+> minimum pairwise CIEDE2000 of {acc} between syntax accents and {ansi}
 > across the 16 ANSI colors, verified against simulated protanopia
 > and deuteranopia.
 
@@ -163,13 +178,14 @@ def main():
         spec = json.load(f)
     with open("ports/registry.json") as f:
         ports = json.load(f)
+    acc, ansi = headline_numbers(spec)
     downloads = os.path.join(OUT, "downloads")
     os.makedirs(downloads, exist_ok=True)
     with open(os.path.join(OUT, "site.json"), "w") as f:
         json.dump(bundle(variant, spec, CHECKS, ports), f,
                   separators=(",", ":"))
     with open(os.path.join(OUT, "llms.txt"), "w") as f:
-        f.write(llms_txt())
+        f.write(llms_txt(acc, ansi))
     with open(os.path.join(OUT, "llms-full.txt"), "w") as f:
         f.write(llms_full(variant))
     for src in DOWNLOADS:

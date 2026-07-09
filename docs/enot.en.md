@@ -25,7 +25,7 @@ The goal: keep the warm aesthetics and provide a measurable guarantee - every co
 - the renderers vim.py, wezterm.py, mc.py, ranger.py substitute ready values from colors.json and contain no color math;
 - regression: check.py verifies the colors.json invariants at every depth and that every color literal in the generated themes belongs to the spec; make check fails the build on any violation.
 
-The key trade-off: an iso-lightness palette is impossible in principle - for seven accents on one LCh circle the ceiling of min ΔE00 is about 5. A 20-unit lightness corridor raises the ceiling to about 12. The shipped values: 8.3 for accents and 7.2 for ANSI 16, both themes. At the 256 depth the actual accent minima are 7.3 (dark) and 2.2 (light): the light theme hits the physical ceiling of the xterm grid at 4.5:1 contrast, the full guarantee is carried by the true-color variants. Tritanopia (around 0.01% of the population) is not a hard constraint and is shown in the cvd.html report for reference.
+The key trade-off: an iso-lightness palette is impossible in principle - for seven accents on one LCh circle the ceiling of min ΔE00 is about 5. A 20-unit lightness corridor raises the ceiling to about 12. The shipped values: 8.2 for accents and 7.2 for ANSI 16, both themes. At the 256 depth the actual accent minima are 7.3 (dark) and 2.2 (light): the light theme hits the physical ceiling of the xterm grid at 4.5:1 contrast, the full guarantee is carried by the true-color variants. Tritanopia (around 0.01% of the population) is not a hard constraint and is shown in the cvd.html report for reference.
 
 ## Research basis
 
