@@ -7,8 +7,9 @@ ports/ with a port.json manifest of one of three kinds:
 - template: a ${var}-placeholder file rendered per output theme via
   string.Template; no Python -- this is the path for the long tail of
   simple key=value color formats;
-- module: a render.py exposing render(spec) -> {path: text}, for
-  formats whose emission needs logic (vim attributes, mc inheritance);
+- module: a render.py exposing render(spec) -> {path: text | bytes},
+  for formats whose emission needs logic (vim attributes, mc
+  inheritance) or binary packaging (telegram zip);
 - static: a source file copied verbatim (ranger's imperative scheme).
 
 Outputs land at the paths declared in each manifest -- the install
@@ -94,7 +95,7 @@ def main():
                              f"!= declared {sorted(declared)}")
         for path, text in outputs.items():
             os.makedirs(os.path.dirname(path), exist_ok=True)
-            with open(path, "w") as f:
+            with open(path, "wb" if isinstance(text, bytes) else "w") as f:
                 f.write(text)
             print(path)
         registry.append({k: manifest[k] for k in REGISTRY_FIELDS})

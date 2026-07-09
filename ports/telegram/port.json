@@ -2,10 +2,10 @@
   "app": "telegram",
   "name": "Telegram Desktop",
   "category": "messenger",
-  "kind": "template",
+  "kind": "module",
   "depth": "16M",
   "guarantee": "full",
-  "template": "theme.tdesktop-theme.tmpl",
+  "module": "render.py",
   "outputs": [
     {"theme": "dark", "path": "telegram/enot-dark.tdesktop-theme"},
     {"theme": "light", "path": "telegram/enot-light.tdesktop-theme"}

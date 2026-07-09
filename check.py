@@ -90,7 +90,9 @@ def check_artifacts(spec, msgs):
     for m in port_manifests():
         paths = [o["path"] for o in m["outputs"]]
         for path in paths:
-            text = open(path).read()
+            # errors="ignore" lets binary containers through: text stored
+            # inside a zip (telegram) is still scanned verbatim
+            text = open(path, errors="ignore").read()
             if "16M" in m["depth"]:
                 check_hex(path, text, hexes, msgs)
             else:
