@@ -39,7 +39,8 @@ metrics embedded.
 - [vim / neovim](https://enot-theme.github.io/vim/): copy [vim/colors/enot.vim](vim/colors/enot.vim) into `~/.vim/colors/` or `~/.config/nvim/colors/`;
 - [WezTerm](https://enot-theme.github.io/wezterm/): copy [wezterm/*.toml](wezterm) into `~/.config/wezterm/colors/`;
 - [Midnight Commander](https://enot-theme.github.io/mc/): copy [mc/*.ini](mc) into `~/.local/share/mc/skins/`;
-- [ranger](https://enot-theme.github.io/ranger/): copy [ranger/colorschemes/enot.py](ranger/colorschemes/enot.py) into `~/.config/ranger/colorschemes/`.
+- [ranger](https://enot-theme.github.io/ranger/): copy [ranger/colorschemes/enot.py](ranger/colorschemes/enot.py) into `~/.config/ranger/colorschemes/`;
+- [Telegram Desktop](https://enot-theme.github.io/telegram/): open [telegram/enot-*.tdesktop-theme](telegram) via Settings > Chat settings > Choose from file.
 
 ## Add a port
 

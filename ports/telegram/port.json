@@ -1,0 +1,14 @@
+{
+  "app": "telegram",
+  "name": "Telegram Desktop",
+  "category": "messenger",
+  "kind": "template",
+  "depth": "16M",
+  "guarantee": "full",
+  "template": "theme.tdesktop-theme.tmpl",
+  "outputs": [
+    {"theme": "dark", "path": "telegram/enot-dark.tdesktop-theme"},
+    {"theme": "light", "path": "telegram/enot-light.tdesktop-theme"}
+  ],
+  "install": "Settings > Chat settings > Choose from file, or open the file in any chat"
+}

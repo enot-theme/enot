@@ -37,6 +37,24 @@
       ]
     },
     {
+      "app": "telegram",
+      "name": "Telegram Desktop",
+      "category": "messenger",
+      "kind": "template",
+      "depth": "16M",
+      "guarantee": "full",
+      "outputs": [
+        {
+          "theme": "dark",
+          "path": "telegram/enot-dark.tdesktop-theme"
+        },
+        {
+          "theme": "light",
+          "path": "telegram/enot-light.tdesktop-theme"
+        }
+      ]
+    },
+    {
       "app": "vim",
       "name": "vim / neovim",
       "category": "editor",

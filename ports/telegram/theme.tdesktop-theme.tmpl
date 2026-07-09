@@ -1,0 +1,696 @@
+// enot for Telegram Desktop: ${scheme_name}
+// ${author}
+// every color resolves to the enot specification (colors.json);
+// alpha suffixes composite specification colors, never new ones
+
+// basic
+windowBg: ${bg0};
+windowFg: ${fg0};
+windowBgOver: ${bg1};
+windowBgRipple: ${bg2};
+windowFgOver: windowFg;
+windowSubTextFg: ${comment};
+windowSubTextFgOver: ${comment};
+windowBoldFg: ${fg0};
+windowBoldFgOver: ${fg0};
+windowBgActive: ${blue};
+windowFgActive: ${bg0};
+windowActiveTextFg: ${blue};
+windowShadowFg: ${ansi_black};
+windowShadowFgFallback: ${bg1};
+
+shadowFg: ${ansi_black}18;
+slideFadeOutBg: ${ansi_black}3c;
+slideFadeOutShadowFg: windowShadowFg;
+
+imageBg: ${ansi_black};
+imageBgTransparent: ${bg0};
+
+// widgets
+activeButtonBg: windowBgActive;
+activeButtonBgOver: ${ansi_blue};
+activeButtonBgRipple: ${ansi_br_blue};
+activeButtonFg: windowFgActive;
+activeButtonFgOver: activeButtonFg;
+activeButtonSecondaryFg: ${bg0};
+activeButtonSecondaryFgOver: activeButtonSecondaryFg;
+activeLineFg: ${blue};
+activeLineFgError: ${red};
+
+lightButtonBg: windowBg;
+lightButtonBgOver: ${diff_change_bg};
+lightButtonBgRipple: ${diff_text_bg};
+lightButtonFg: windowActiveTextFg;
+lightButtonFgOver: lightButtonFg;
+
+attentionButtonFg: ${red};
+attentionButtonFgOver: ${red};
+attentionButtonBgOver: ${diff_del_bg};
+attentionButtonBgRipple: ${red}33;
+
+menuBg: windowBg;
+menuBgOver: windowBgOver;
+menuBgRipple: windowBgRipple;
+menuIconFg: ${comment};
+menuIconFgOver: ${comment};
+menuSubmenuArrowFg: ${fg1};
+menuFgDisabled: ${bg2};
+menuSeparatorFg: ${bg1};
+
+scrollBarBg: ${fg1}53;
+scrollBarBgOver: ${fg1}7a;
+scrollBg: ${ansi_black}1a;
+scrollBgOver: ${ansi_black}2c;
+
+smallCloseIconFg: ${linenr};
+smallCloseIconFgOver: ${linenr};
+
+radialFg: ${ansi_br_white};
+radialBg: ${ansi_black}56;
+
+placeholderFg: windowSubTextFg;
+placeholderFgActive: ${linenr};
+inputBorderFg: ${bg2};
+filterInputBorderFg: ${blue};
+filterInputActiveBg: windowBg;
+filterInputInactiveBg: windowBgOver;
+checkboxFg: ${linenr};
+
+botKbBg: menuBgOver;
+botKbDownBg: menuBgRipple;
+botKbColor: windowBoldFgOver;
+botKbPrimaryBg: ${blue}cc;
+botKbDangerBg: ${red}cc;
+botKbSuccessBg: ${green}cc;
+botKbInlinePrimaryBg: ${blue}b3;
+botKbInlineDangerBg: ${red}b3;
+botKbInlineSuccessBg: ${green}b3;
+
+sliderBgInactive: ${bg2};
+sliderBgActive: windowBgActive;
+
+tooltipBg: ${bg1};
+tooltipFg: ${comment};
+tooltipBorderFg: ${bg2};
+
+// custom title bar
+titleShadow: ${ansi_black}03;
+titleBg: windowBgOver;
+titleBgActive: titleBg;
+titleButtonBg: titleBg;
+titleButtonFg: ${linenr};
+titleButtonBgOver: ${bg2};
+titleButtonFgOver: ${comment};
+titleButtonBgActive: titleButtonBg;
+titleButtonFgActive: titleButtonFg;
+titleButtonBgActiveOver: titleButtonBgOver;
+titleButtonFgActiveOver: titleButtonFgOver;
+titleButtonCloseBg: titleButtonBg;
+titleButtonCloseFg: titleButtonFg;
+titleButtonCloseBgOver: ${red};
+titleButtonCloseFgOver: windowFgActive;
+titleButtonCloseBgActive: titleButtonCloseBg;
+titleButtonCloseFgActive: titleButtonCloseFg;
+titleButtonCloseBgActiveOver: titleButtonCloseBgOver;
+titleButtonCloseFgActiveOver: titleButtonCloseFgOver;
+titleFg: ${linenr};
+titleFgActive: ${fg0};
+
+// tray icon
+trayCounterBg: ${red};
+trayCounterBgMute: ${comment};
+trayCounterFg: ${bg0};
+trayCounterBgMacInvert: ${bg0};
+trayCounterFgMacInvert: ${ansi_br_white}01;
+
+// layers
+layerBg: ${ansi_black}7f;
+
+cancelIconFg: menuIconFg;
+cancelIconFgOver: menuIconFgOver;
+
+// boxes
+boxBg: windowBg;
+boxTextFg: windowFg;
+boxTextFgGood: ${green};
+boxTextFgError: ${red};
+boxTitleFg: ${fg0};
+boxSearchBg: boxBg;
+
+boxTitleAdditionalFg: ${comment};
+boxTitleCloseFg: cancelIconFg;
+boxTitleCloseFgOver: cancelIconFgOver;
+
+boxDividerBg: windowBgOver;
+boxDividerFg: windowShadowFg;
+
+paymentsTipActive: ${green};
+
+membersAboutLimitFg: windowSubTextFgOver;
+
+contactsBg: windowBg;
+contactsBgOver: windowBgOver;
+contactsNameFg: boxTextFg;
+contactsStatusFg: windowSubTextFg;
+contactsStatusFgOver: windowSubTextFgOver;
+contactsStatusFgOnline: windowActiveTextFg;
+
+photoCropFadeBg: layerBg;
+photoCropPointFg: ${ansi_br_white}7f;
+
+callArrowFg: ${green};
+callArrowMissedFg: ${red};
+
+// intro
+introBg: windowBg;
+introTitleFg: windowBoldFg;
+introDescriptionFg: windowSubTextFg;
+
+introCoverTopBg: ${blue};
+introCoverBottomBg: ${blue};
+introCoverIconsFg: ${blue};
+introCoverPlaneTrace: ${blue}69;
+introCoverPlaneInner: ${diff_change_bg};
+introCoverPlaneOuter: ${diff_text_bg};
+introCoverPlaneTop: ${bg0};
+
+// dialogs
+dialogsMenuIconFg: menuIconFg;
+dialogsMenuIconFgOver: menuIconFgOver;
+
+dialogsBg: windowBg;
+dialogsNameFg: windowBoldFg;
+dialogsChatIconFg: dialogsNameFg;
+dialogsDateFg: windowSubTextFg;
+dialogsTextFg: windowSubTextFg;
+dialogsTextFgService: windowActiveTextFg;
+dialogsDraftFg: ${red};
+dialogsVerifiedIconBg: windowBgActive;
+dialogsVerifiedIconFg: windowFgActive;
+dialogsSendingIconFg: ${linenr};
+dialogsSentIconFg: ${green};
+dialogsUnreadBg: windowBgActive;
+dialogsUnreadBgMuted: ${linenr};
+dialogsUnreadFg: windowFgActive;
+dialogsArchiveFg: ${fg1};
+dialogsOnlineBadgeFg: ${green};
+dialogsScamFg: dialogsDraftFg;
+
+dialogsBgOver: windowBgOver;
+dialogsNameFgOver: windowBoldFgOver;
+dialogsChatIconFgOver: dialogsNameFgOver;
+dialogsDateFgOver: windowSubTextFgOver;
+dialogsTextFgOver: windowSubTextFgOver;
+dialogsTextFgServiceOver: dialogsTextFgService;
+dialogsDraftFgOver: dialogsDraftFg;
+dialogsVerifiedIconBgOver: dialogsVerifiedIconBg;
+dialogsVerifiedIconFgOver: dialogsVerifiedIconFg;
+dialogsSendingIconFgOver: dialogsSendingIconFg;
+dialogsSentIconFgOver: ${green};
+dialogsUnreadBgOver: dialogsUnreadBg;
+dialogsUnreadBgMutedOver: dialogsUnreadBgMuted;
+dialogsUnreadFgOver: dialogsUnreadFg;
+dialogsArchiveFgOver: ${fg1};
+dialogsScamFgOver: dialogsDraftFgOver;
+
+dialogsBgActive: ${blue};
+dialogsNameFgActive: windowFgActive;
+dialogsChatIconFgActive: dialogsNameFgActive;
+dialogsDateFgActive: windowFgActive;
+dialogsTextFgActive: windowFgActive;
+dialogsTextFgServiceActive: dialogsTextFgActive;
+dialogsDraftFgActive: ${bg1};
+dialogsVerifiedIconBgActive: dialogsTextFgActive;
+dialogsVerifiedIconFgActive: dialogsBgActive;
+dialogsSendingIconFgActive: ${bg0}99;
+dialogsSentIconFgActive: dialogsTextFgActive;
+dialogsUnreadBgActive: dialogsTextFgActive;
+dialogsUnreadBgMutedActive: dialogsDraftFgActive;
+dialogsUnreadFgActive: dialogsBgActive;
+dialogsOnlineBadgeFgActive: ${bg0};
+dialogsScamFgActive: dialogsDraftFgActive;
+
+dialogsRippleBg: windowBgRipple;
+dialogsRippleBgActive: activeButtonBgRipple;
+
+searchedBarBg: windowBgOver;
+searchedBarFg: windowSubTextFgOver;
+searchedTextMatchBg: ${yellow}40;
+searchedTextMatchFg: ${fg0};
+searchedTextCurrentMatchBg: ${orange}66;
+searchedTextCurrentMatchFg: ${fg0};
+
+// history
+topBarBg: windowBg;
+
+emojiPanBg: windowBg;
+emojiPanCategories: ${bg1};
+emojiPanHeaderFg: windowSubTextFg;
+emojiPanHeaderBg: ${bg0}f2;
+emojiIconFg: ${comment};
+emojiSubIconFgActive: ${fg1};
+stickerPanDeleteBg: ${ansi_black}ff;
+stickerPanDeleteFg: ${ansi_br_white};
+stickerPreviewBg: ${bg0}b0;
+stickerPanPremium1: ${blue};
+stickerPanPremium2: ${aqua};
+
+historyTextInFg: windowFg;
+historyTextInFgSelected: historyTextInFg;
+historyTextOutFg: windowFg;
+historyTextOutFgSelected: historyTextOutFg;
+historyLinkInFg: windowActiveTextFg;
+historyLinkInFgSelected: historyLinkInFg;
+historyLinkOutFg: windowActiveTextFg;
+historyLinkOutFgSelected: historyLinkOutFg;
+historyFileNameInFg: historyTextInFg;
+historyFileNameInFgSelected: historyFileNameInFg;
+historyFileNameOutFg: historyTextOutFg;
+historyFileNameOutFgSelected: historyFileNameOutFg;
+historyOutIconFg: ${green};
+historyOutIconFgSelected: ${aqua};
+historyIconFgInverted: ${ansi_br_white};
+historySendingOutIconFg: ${comment};
+historySendingInIconFg: ${linenr};
+historySendingInvertedIconFg: ${ansi_br_white}c8;
+historyCallArrowInFg: ${green};
+historyCallArrowInFgSelected: ${aqua};
+historyCallArrowMissedInFg: callArrowMissedFg;
+historyCallArrowMissedInFgSelected: callArrowMissedFg;
+historyCallArrowOutFg: historyCallArrowInFg;
+historyCallArrowOutFgSelected: historyCallArrowInFgSelected;
+
+historyUnreadBarBg: ${bg1};
+historyUnreadBarBorder: shadowFg;
+historyUnreadBarFg: ${blue};
+
+historyForwardChooseBg: ${ansi_black}4c;
+historyForwardChooseFg: ${ansi_br_white};
+
+historyPeer1NameFg: ${red};
+historyPeer1NameFgSelected: historyPeer1NameFg;
+historyPeer1UserpicBg: ${red};
+historyPeer2NameFg: ${green};
+historyPeer2NameFgSelected: historyPeer2NameFg;
+historyPeer2UserpicBg: ${ansi_green};
+historyPeer3NameFg: ${yellow};
+historyPeer3NameFgSelected: historyPeer3NameFg;
+historyPeer3UserpicBg: ${yellow};
+historyPeer4NameFg: windowActiveTextFg;
+historyPeer4NameFgSelected: historyPeer4NameFg;
+historyPeer4UserpicBg: ${blue};
+historyPeer5NameFg: ${purple};
+historyPeer5NameFgSelected: historyPeer5NameFg;
+historyPeer5UserpicBg: ${purple};
+historyPeer6NameFg: ${ansi_br_magenta};
+historyPeer6NameFgSelected: historyPeer6NameFg;
+historyPeer6UserpicBg: ${ansi_br_magenta};
+historyPeer7NameFg: ${aqua};
+historyPeer7NameFgSelected: historyPeer7NameFg;
+historyPeer7UserpicBg: ${aqua};
+historyPeer8NameFg: ${orange};
+historyPeer8NameFgSelected: historyPeer8NameFg;
+historyPeer8UserpicBg: ${orange};
+historyPeerUserpicFg: windowFgActive;
+historyPeerSavedMessagesBg: historyPeer4UserpicBg;
+historyPeerArchiveUserpicBg: dialogsUnreadBgMuted;
+
+historyPeer1UserpicBg2: ${ansi_red};
+historyPeer2UserpicBg2: ${green};
+historyPeer3UserpicBg2: ${yellow};
+historyPeer4UserpicBg2: ${blue};
+historyPeer5UserpicBg2: ${ansi_magenta};
+historyPeer6UserpicBg2: ${ansi_magenta};
+historyPeer7UserpicBg2: ${blue};
+historyPeer8UserpicBg2: ${ansi_br_red};
+historyPeerSavedMessagesBg2: historyPeer4UserpicBg2;
+
+settingsIconBg1: ${red};
+settingsIconBg2: ${green};
+settingsIconBg3: ${orange};
+settingsIconBg4: ${blue};
+settingsIconBg5: ${aqua};
+settingsIconBg6: ${purple};
+settingsIconBg8: ${ansi_br_red};
+settingsIconBgArchive: ${linenr};
+settingsIconFg: ${bg0};
+
+// Some values are marked as (adjusted), it means they're adjusted by
+// hue and saturation of the average background color if user chooses
+// some other (not bundled to this color theme) background. If the
+// bundled background is used those colors are not adjusted in any way.
+historyScrollBarBg: ${fg1}7a;
+historyScrollBarBgOver: ${fg1}bc;
+historyScrollBg: ${fg1}4c;
+historyScrollBgOver: ${fg1}6b;
+
+msgInBg: windowBg;
+msgInBgSelected: ${diff_text_bg};
+msgOutBg: ${diff_add_bg};
+msgOutBgSelected: ${diff_text_bg};
+msgSelectOverlay: ${blue}4c;
+msgStickerOverlay: ${blue}7f;
+msgInServiceFg: windowActiveTextFg;
+msgInServiceFgSelected: windowActiveTextFg;
+msgOutServiceFg: ${green};
+msgOutServiceFgSelected: ${aqua};
+msgInShadow: ${ansi_black}29;
+msgInShadowSelected: ${ansi_black}29;
+msgOutShadow: ${ansi_black}1d;
+msgOutShadowSelected: ${ansi_black}22;
+msgInDateFg: ${linenr};
+msgInDateFgSelected: ${ansi_cyan};
+msgOutDateFg: ${green};
+msgOutDateFgSelected: ${aqua};
+msgServiceFg: ${ansi_br_white};
+msgServiceBg: ${ansi_black}66;
+msgServiceBgSelected: ${ansi_cyan}a2;
+msgInReplyBarColor: activeLineFg;
+msgInReplyBarSelColor: activeLineFg;
+msgOutReplyBarColor: ${green};
+msgOutReplyBarSelColor: historyOutIconFgSelected;
+msgImgReplyBarColor: msgServiceFg;
+msgInMonoFg: ${aqua};
+msgOutMonoFg: ${aqua};
+msgInMonoFgSelected: msgInMonoFg;
+msgOutMonoFgSelected: msgOutMonoFg;
+msgDateImgFg: msgServiceFg;
+msgDateImgBg: ${ansi_black}54;
+msgDateImgBgOver: ${ansi_black}74;
+msgDateImgBgSelected: ${ansi_black}87;
+
+msgFileThumbLinkInFg: lightButtonFg;
+msgFileThumbLinkInFgSelected: lightButtonFgOver;
+msgFileThumbLinkOutFg: ${green};
+msgFileThumbLinkOutFgSelected: ${aqua};
+msgFileInBg: windowBgActive;
+msgFileInBgOver: ${ansi_blue};
+msgFileInBgSelected: ${blue};
+msgFileOutBg: ${green};
+msgFileOutBgSelected: ${ansi_cyan};
+
+msgFile1Bg: ${blue};
+msgFile1BgDark: ${blue};
+msgFile1BgOver: ${ansi_blue};
+msgFile1BgSelected: ${ansi_cyan};
+msgFile2Bg: ${green};
+msgFile2BgDark: ${ansi_green};
+msgFile2BgOver: ${ansi_green};
+msgFile2BgSelected: ${ansi_cyan};
+msgFile3Bg: ${red};
+msgFile3BgDark: ${red};
+msgFile3BgOver: ${ansi_red};
+msgFile3BgSelected: ${ansi_magenta};
+msgFile4Bg: ${yellow};
+msgFile4BgDark: ${ansi_yellow};
+msgFile4BgOver: ${ansi_br_yellow};
+msgFile4BgSelected: ${ansi_yellow};
+
+historyFileInIconFg: msgInBg;
+historyFileInIconFgSelected: msgInBgSelected;
+historyFileInRadialFg: historyFileInIconFg;
+historyFileInRadialFgSelected: historyFileInIconFgSelected;
+historyFileOutIconFg: msgOutBg;
+historyFileOutIconFgSelected: msgOutBgSelected;
+historyFileOutRadialFg: historyFileOutIconFg;
+historyFileOutRadialFgSelected: historyFileOutIconFgSelected;
+historyFileThumbIconFg: msgInBg;
+historyFileThumbIconFgSelected: msgInBgSelected;
+historyFileThumbRadialFg: historyFileThumbIconFg;
+historyFileThumbRadialFgSelected: historyFileThumbIconFgSelected;
+
+historyVideoMessageProgressFg: historyFileThumbIconFg;
+
+msgWaveformInActive: windowBgActive;
+msgWaveformInActiveSelected: ${blue};
+msgWaveformInInactive: ${linenr};
+msgWaveformInInactiveSelected: ${ansi_cyan};
+msgWaveformOutActive: ${green};
+msgWaveformOutActiveSelected: ${aqua};
+msgWaveformOutInactive: ${linenr};
+msgWaveformOutInactiveSelected: ${ansi_cyan};
+
+msgBotKbOverBgAdd: ${ansi_br_white}20;
+msgBotKbIconFg: msgServiceFg;
+msgBotKbRippleBg: ${ansi_black}20;
+
+mediaInFg: msgInDateFg;
+mediaInFgSelected: msgInDateFgSelected;
+mediaOutFg: msgOutDateFg;
+mediaOutFgSelected: msgOutDateFgSelected;
+
+youtubePlayIconBg: ${red}c8;
+youtubePlayIconFg: windowFgActive;
+videoPlayIconBg: ${ansi_black}7f;
+videoPlayIconFg: ${ansi_br_white};
+toastBg: ${ansi_black}e5;
+toastFg: ${ansi_br_white};
+
+historyToDownBg: windowBg;
+historyToDownBgOver: windowBgOver;
+historyToDownBgRipple: windowBgRipple;
+historyToDownFg: menuIconFg;
+historyToDownFgOver: menuIconFgOver;
+historyToDownShadow: ${ansi_black}40;
+
+historyComposeAreaBg: msgInBg;
+historyComposeAreaFg: historyTextInFg;
+historyComposeAreaFgService: msgInDateFg;
+historyComposeIconFg: menuIconFg;
+historyComposeIconFgOver: menuIconFgOver;
+historySendIconFg: windowBgActive;
+historySendIconFgOver: windowBgActive;
+historyPinnedBg: historyComposeAreaBg;
+historyReplyBg: historyComposeAreaBg;
+historyReplyIconFg: windowBgActive;
+historyReplyCancelFg: cancelIconFg;
+historyReplyCancelFgOver: cancelIconFgOver;
+
+historyComposeButtonBg: historyComposeAreaBg;
+historyComposeButtonBgOver: windowBgOver;
+historyComposeButtonBgRipple: windowBgRipple;
+
+mapPointDrop: ${red};
+mapPointDot: ${bg0};
+
+// overview
+overviewCheckBg: ${ansi_black}40;
+overviewCheckBgActive: windowBgActive;
+overviewCheckBorder: ${ansi_br_white};
+overviewCheckFgActive: windowBg;
+overviewPhotoSelectOverlay: ${blue}33;
+
+// profile
+profileStatusFgOver: ${comment};
+profileVerifiedCheckBg: windowBgActive;
+profileVerifiedCheckFg: windowFgActive;
+profileAdminStartFg: windowBgActive;
+
+// settings
+notificationsBoxMonitorFg: windowFg;
+notificationsBoxScreenBg: dialogsBgActive;
+
+notificationSampleUserpicFg: windowBgActive;
+notificationSampleCloseFg: ${bg2};
+notificationSampleTextFg: ${bg2};
+notificationSampleNameFg: ${comment};
+
+mainMenuBg: windowBg;
+mainMenuCoverBg: dialogsBgActive;
+mainMenuCloudFg: activeButtonFg;
+mainMenuCloudBg: ${blue};
+
+mediaPlayerBg: windowBg;
+mediaPlayerActiveFg: windowBgActive;
+mediaPlayerInactiveFg: sliderBgInactive;
+mediaPlayerDisabledFg: ${linenr};
+
+// mediaview
+mediaviewFileBg: windowBg;
+mediaviewFileNameFg: windowFg;
+mediaviewFileSizeFg: windowSubTextFg;
+mediaviewFileRedCornerFg: ${red};
+mediaviewFileYellowCornerFg: ${ansi_br_yellow};
+mediaviewFileGreenCornerFg: ${green};
+mediaviewFileBlueCornerFg: ${blue};
+mediaviewFileExtFg: activeButtonFg;
+
+mediaviewMenuBg: ${bg1};
+mediaviewMenuBgOver: ${bg2};
+mediaviewMenuBgRipple: ${bg3};
+mediaviewMenuFg: ${fg0};
+
+mediaviewBg: ${bg0}eb;
+mediaviewVideoBg: imageBg;
+mediaviewControlBg: ${ansi_black}3c;
+mediaviewControlFg: ${fg0};
+mediaviewCaptionBg: ${ansi_black}80;
+mediaviewCaptionFg: mediaviewControlFg;
+mediaviewTextLinkFg: ${blue};
+mediaviewSaveMsgBg: toastBg;
+mediaviewSaveMsgFg: toastFg;
+
+mediaviewPlaybackActive: ${fg1};
+mediaviewPlaybackInactive: ${bg3};
+mediaviewPlaybackActiveOver: ${fg0};
+mediaviewPlaybackInactiveOver: ${linenr};
+mediaviewPlaybackProgressFg: ${fg0}c7;
+mediaviewPlaybackIconFg: mediaviewPlaybackActive;
+mediaviewPlaybackIconFgOver: mediaviewPlaybackActiveOver;
+mediaviewPlaybackIconRipple: ${fg0}14;
+
+mediaviewPipControlsFg: ${ansi_br_white}d9;
+mediaviewPipControlsFgOver: ${ansi_br_white};
+mediaviewPipPlaybackActive: ${ansi_br_white}da;
+mediaviewPipPlaybackInactive: ${ansi_br_white}26;
+
+mediaviewTransparentBg: ${bg0};
+mediaviewTransparentFg: ${bg2};
+
+// notification
+notificationBg: windowBg;
+
+// calls
+callBg: ${bg0}f2;
+callBgOpaque: ${bg0};
+callBgButton: ${ansi_black}7f;
+callNameFg: ${fg0};
+callStatusFg: ${comment};
+callIconBg: ${ansi_br_white}33;
+callIconFg: ${bg0};
+callIconBgActive: ${ansi_br_white}e5;
+callIconFgActive: ${ansi_black};
+callIconActiveRipple: ${bg1};
+callAnswerBg: ${green};
+callAnswerRipple: ${ansi_green};
+callAnswerBgOuter: ${green}26;
+callHangupBg: ${red};
+callHangupRipple: ${ansi_red};
+callMuteRipple: ${ansi_br_white}12;
+
+groupCallBg: ${bg0};
+groupCallActiveFg: ${blue};
+groupCallMembersBg: ${bg1};
+groupCallMembersBgOver: ${bg2};
+groupCallMembersBgRipple: ${bg3};
+groupCallMembersFg: ${fg0};
+groupCallMemberActiveIcon: ${green};
+groupCallMemberActiveStatus: ${green};
+groupCallMemberInactiveIcon: ${comment};
+groupCallMemberInactiveStatus: ${blue};
+groupCallMemberMutedIcon: ${red};
+groupCallMemberNotJoinedStatus: ${comment};
+groupCallIconFg: ${bg0};
+groupCallLive1: ${green};
+groupCallLive2: ${aqua};
+groupCallMuted1: ${blue};
+groupCallMuted2: ${aqua};
+groupCallForceMutedBar1: ${purple};
+groupCallForceMutedBar2: ${ansi_blue};
+groupCallForceMutedBar3: ${blue};
+groupCallForceMuted1: ${blue};
+groupCallForceMuted2: ${purple};
+groupCallForceMuted3: ${red};
+groupCallMenuBg: ${bg1};
+groupCallMenuBgOver: ${bg2};
+groupCallMenuBgRipple: ${bg3};
+groupCallLeaveBg: ${red}7f;
+groupCallLeaveBgRipple: ${red}9e;
+groupCallVideoTextFg: ${ansi_br_white}e0;
+groupCallVideoSubTextFg: ${ansi_br_white}c0;
+
+callBarBg: dialogsBgActive;
+callBarMuteRipple: dialogsRippleBgActive;
+callBarBgMuted: ${comment};
+callBarFg: dialogsNameFgActive;
+
+importantTooltipBg: toastBg;
+importantTooltipFg: toastFg;
+importantTooltipFgLink: mediaviewTextLinkFg;
+
+outdatedFg: ${bg0};
+outdateSoonBg: ${orange};
+outdatedBg: ${red};
+
+// spellcheck
+spellUnderline: ${red}88;
+
+walletTitleBg: ${bg1};
+walletTitleBgActive: walletTitleBg;
+walletTitleButtonBg: walletTitleBg;
+walletTitleButtonFg: ${comment};
+walletTitleButtonBgOver: ${bg2};
+walletTitleButtonFgOver: ${comment};
+walletTitleButtonBgActive: walletTitleButtonBg;
+walletTitleButtonFgActive: walletTitleButtonFg;
+walletTitleButtonBgActiveOver: walletTitleButtonBgOver;
+walletTitleButtonFgActiveOver: walletTitleButtonFgOver;
+walletTitleButtonCloseBg: walletTitleButtonBg;
+walletTitleButtonCloseFg: walletTitleButtonFg;
+walletTitleButtonCloseBgOver: titleButtonCloseBgOver;
+walletTitleButtonCloseFgOver: titleButtonCloseFgOver;
+walletTitleButtonCloseBgActive: walletTitleButtonCloseBg;
+walletTitleButtonCloseFgActive: walletTitleButtonCloseFg;
+walletTitleButtonCloseBgActiveOver: walletTitleButtonCloseBgOver;
+walletTitleButtonCloseFgActiveOver: walletTitleButtonCloseFgOver;
+walletTopBg: ${bg0};
+walletBalanceFg: ${fg0};
+walletSubBalanceFg: ${comment};
+walletTopLabelFg: ${comment};
+walletTopIconFg: walletTopLabelFg;
+walletTopIconRipple: ${ansi_br_white}12;
+
+sideBarBg: ${bg1};
+sideBarBgActive: ${bg0};
+sideBarBgRipple: ${bg2};
+sideBarTextFg: ${comment};
+sideBarTextFgActive: ${blue};
+sideBarIconFg: ${comment};
+sideBarIconFgActive: ${blue};
+sideBarBadgeBg: ${blue};
+sideBarBadgeBgActive: sideBarBadgeBg;
+sideBarBadgeBgMuted: ${comment};
+sideBarBadgeBgMutedActive: sideBarBadgeBg;
+sideBarBadgeFg: ${bg0};
+
+songCoverOverlayFg: ${ansi_black}66;
+
+photoEditorItemBaseHandleFg: ${aqua};
+
+premiumButtonBg1: ${blue};
+premiumButtonBg2: ${purple};
+premiumButtonBg3: ${ansi_br_magenta};
+premiumButtonFg: ${bg0};
+
+premiumIconBg1: ${orange};
+premiumIconBg2: ${red};
+premiumIconBg3: ${green};
+
+statisticsChartInactive: ${bg2}99;
+statisticsChartActive: ${linenr}d8;
+
+statisticsChartLineBlue: ${blue};
+statisticsChartLineGreen: ${green};
+statisticsChartLineRed: ${red};
+statisticsChartLineGolden: ${yellow};
+statisticsChartLineLightblue: ${ansi_br_blue};
+statisticsChartLineLightgreen: ${ansi_br_green};
+statisticsChartLineOrange: ${orange};
+statisticsChartLineIndigo: ${ansi_br_magenta};
+statisticsChartLinePurple: ${purple};
+statisticsChartLineCyan: ${aqua};
+
+creditsBg1: ${yellow};
+creditsBg2: ${ansi_br_yellow};
+creditsBg3: ${ansi_yellow};
+creditsFg: ${orange};
+creditsStroke: ${orange};
+currencyFg: ${blue};
+
+rankAdminFg: ${green};
+rankOwnerFg: ${purple};
+rankUserFg: windowSubTextFg;
+
+dialogsMentionIconFg: ${blue};
+dialogsReactionIconFg: ${red};
+dialogsPollIconFg: ${purple};
