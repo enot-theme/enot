@@ -80,8 +80,6 @@ def bundle(variant, spec, checks, ports):
     acc, ansi = headline_numbers(spec)
     return {
         "slug": SLUG,
-        "baseUrl": BASE_URL,
-        "roles": ROLE_KEYS,
         "accents": ROLES,
         "vision": build_vision(variant),
         "metrics": spec["metrics"],

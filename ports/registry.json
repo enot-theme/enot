@@ -21,8 +21,7 @@
         {
           "path": "mc/enot-light256.ini"
         }
-      ],
-      "install": "copy into ~/.local/share/mc/skins/ and select in Options > Appearance or mc -S enot-dark-16M"
+      ]
     },
     {
       "app": "ranger",
@@ -35,8 +34,7 @@
         {
           "path": "ranger/colorschemes/enot.py"
         }
-      ],
-      "install": "copy into ~/.config/ranger/colorschemes/ and add \"set colorscheme enot\" to rc.conf; ranger >= 1.9.3"
+      ]
     },
     {
       "app": "vim",
@@ -49,8 +47,7 @@
         {
           "path": "vim/colors/enot.vim"
         }
-      ],
-      "install": "copy into ~/.vim/colors/ or ~/.config/nvim/colors/"
+      ]
     },
     {
       "app": "wezterm",
@@ -68,8 +65,7 @@
           "theme": "light",
           "path": "wezterm/enot-light.toml"
         }
-      ],
-      "install": "copy into ~/.config/wezterm/colors/ and set color_scheme = \"enot-dark\""
+      ]
     }
   ]
 }
