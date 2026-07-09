@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
-# vim, wezterm, mc, ranger and site match the directory names
-.PHONY: help optimize palettes resolve report check wezterm vim mc ranger site all deploy
+# site matches the directory name; ports render from ports/*/port.json
+.PHONY: help optimize palettes resolve report render check build site all deploy
 
 help: ## show this help
 	@awk 'BEGIN {FS = ":.*##"} /^[a-zA-Z_-]+:.*##/ {printf "  %-10s %s\n", $$1, $$2}' $(MAKEFILE_LIST)
@@ -17,25 +17,18 @@ resolve: ## color spec at three depths (colors.json)
 report: ## dichromacy report cvd.html
 	python3 cvd.py
 
+render: ## render every port from colors.json (ports/*)
+	python3 build.py
+
 check: ## regression: invariants of colors.json and artifacts
 	python3 check.py
 
-wezterm: ## wezterm schemes from colors.json (wezterm/*.toml)
-	python3 wezterm.py
-
-vim: ## vim colorscheme from colors.json (vim/colors/*.vim)
-	python3 vim.py
-
-mc: ## mc skins from colors.json (mc/*.ini)
-	python3 mc.py
-
-ranger: ## ranger scheme on the terminal palette (ranger/colorschemes/*.py)
-	python3 ranger.py
+build: optimize palettes resolve report render check ## full pipeline without the site (CI gate)
 
 site: ## theme site (site/*.html + scheme files)
 	python3 site.py
 
-all: optimize palettes resolve report wezterm vim mc ranger site check ## full cycle
+all: build site ## full cycle including the site
 
 deploy: site ## rebuild the site and publish to GitHub Pages
 	cd site && git add -A && (git diff --cached --quiet \

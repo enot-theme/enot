@@ -1,0 +1,14 @@
+{
+  "app": "wezterm",
+  "name": "WezTerm",
+  "category": "terminal",
+  "kind": "template",
+  "depth": "16M",
+  "guarantee": "full",
+  "template": "scheme.toml.tmpl",
+  "outputs": [
+    {"theme": "dark", "path": "wezterm/enot-dark.toml"},
+    {"theme": "light", "path": "wezterm/enot-light.toml"}
+  ],
+  "install": "copy into ~/.config/wezterm/colors/ and set color_scheme = \"enot-dark\""
+}

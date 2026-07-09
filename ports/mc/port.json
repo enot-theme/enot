@@ -1,0 +1,16 @@
+{
+  "app": "mc",
+  "name": "Midnight Commander",
+  "category": "file-manager",
+  "kind": "module",
+  "depth": "16M+256",
+  "guarantee": "full",
+  "module": "render.py",
+  "outputs": [
+    {"path": "mc/enot-dark-16M.ini"},
+    {"path": "mc/enot-dark256.ini"},
+    {"path": "mc/enot-light-16M.ini"},
+    {"path": "mc/enot-light256.ini"}
+  ],
+  "install": "copy into ~/.local/share/mc/skins/ and select in Options > Appearance or mc -S enot-dark-16M"
+}

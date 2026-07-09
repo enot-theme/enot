@@ -1,0 +1,13 @@
+{
+  "app": "vim",
+  "name": "vim / neovim",
+  "category": "editor",
+  "kind": "module",
+  "depth": "16M+256+ansi",
+  "guarantee": "full",
+  "module": "render.py",
+  "outputs": [
+    {"path": "vim/colors/enot.vim"}
+  ],
+  "install": "copy into ~/.vim/colors/ or ~/.config/nvim/colors/"
+}

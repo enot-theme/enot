@@ -1,0 +1,75 @@
+{
+  "slug": "enot",
+  "ports": [
+    {
+      "app": "mc",
+      "name": "Midnight Commander",
+      "category": "file-manager",
+      "kind": "module",
+      "depth": "16M+256",
+      "guarantee": "full",
+      "outputs": [
+        {
+          "path": "mc/enot-dark-16M.ini"
+        },
+        {
+          "path": "mc/enot-dark256.ini"
+        },
+        {
+          "path": "mc/enot-light-16M.ini"
+        },
+        {
+          "path": "mc/enot-light256.ini"
+        }
+      ],
+      "install": "copy into ~/.local/share/mc/skins/ and select in Options > Appearance or mc -S enot-dark-16M"
+    },
+    {
+      "app": "ranger",
+      "name": "ranger",
+      "category": "file-manager",
+      "kind": "static",
+      "depth": "ansi",
+      "guarantee": "ansi",
+      "outputs": [
+        {
+          "path": "ranger/colorschemes/enot.py"
+        }
+      ],
+      "install": "copy into ~/.config/ranger/colorschemes/ and add \"set colorscheme enot\" to rc.conf; ranger >= 1.9.3"
+    },
+    {
+      "app": "vim",
+      "name": "vim / neovim",
+      "category": "editor",
+      "kind": "module",
+      "depth": "16M+256+ansi",
+      "guarantee": "full",
+      "outputs": [
+        {
+          "path": "vim/colors/enot.vim"
+        }
+      ],
+      "install": "copy into ~/.vim/colors/ or ~/.config/nvim/colors/"
+    },
+    {
+      "app": "wezterm",
+      "name": "WezTerm",
+      "category": "terminal",
+      "kind": "template",
+      "depth": "16M",
+      "guarantee": "full",
+      "outputs": [
+        {
+          "theme": "dark",
+          "path": "wezterm/enot-dark.toml"
+        },
+        {
+          "theme": "light",
+          "path": "wezterm/enot-light.toml"
+        }
+      ],
+      "install": "copy into ~/.config/wezterm/colors/ and set color_scheme = \"enot-dark\""
+    }
+  ]
+}
