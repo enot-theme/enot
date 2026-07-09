@@ -175,7 +175,10 @@ def main():
         ports = json.load(f)
     acc, ansi = headline_numbers(spec)
     downloads = os.path.join(OUT, "downloads")
-    os.makedirs(downloads, exist_ok=True)
+    # start clean: a renamed or removed artifact must not linger here
+    # and get re-synced to the site by make deploy
+    shutil.rmtree(downloads, ignore_errors=True)
+    os.makedirs(downloads)
     with open(os.path.join(OUT, "site.json"), "w") as f:
         json.dump(bundle(variant, spec, CHECKS, ports), f,
                   separators=(",", ":"))
