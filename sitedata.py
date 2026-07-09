@@ -121,6 +121,11 @@ gate fails the build if any guarantee drops.
 - [Install for Midnight Commander]({b}mc/)
 - [Install for ranger]({b}ranger/)
 - [Applications and coverage]({b}apps/)
+- [All install targets]({b}get/)
+- [Why warm themes collapse under color blindness]({b}why/)
+- [Measured guarantees and regression gates]({b}numbers/)
+- [Method: how the palette is optimized]({b}method/)
+- [Published sources]({b}science/)
 - [Homepage with live dichromacy simulation]({b})
 
 ## Optional
