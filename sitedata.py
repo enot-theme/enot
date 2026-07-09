@@ -26,7 +26,7 @@ import shutil
 from cvd import SIM_FUNCS
 from palette import ANSI_ORDER, NEUTRAL_ROLES, ROLES, SLUG, enot_variant
 
-BASE_URL = "https://enot-theme.github.io/site/"
+BASE_URL = "https://enot-theme.github.io/"
 OUT = "build/site"
 ROLE_KEYS = NEUTRAL_ROLES + ROLES
 # bright row of gruvbox dark and normal row of gruvbox light, same 7 roles
@@ -124,11 +124,11 @@ gate fails the build if any guarantee drops.
 
 ## Documentation
 
-- [Install for vim / neovim]({b}vim.html)
-- [Install for WezTerm]({b}wezterm.html)
-- [Install for Midnight Commander]({b}mc.html)
-- [Install for ranger]({b}ranger.html)
-- [Applications and coverage]({b}apps.html)
+- [Install for vim / neovim]({b}vim/)
+- [Install for WezTerm]({b}wezterm/)
+- [Install for Midnight Commander]({b}mc/)
+- [Install for ranger]({b}ranger/)
+- [Applications and coverage]({b}apps/)
 - [Homepage with live dichromacy simulation]({b})
 
 ## Optional
