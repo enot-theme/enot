@@ -28,10 +28,10 @@ were removed in 2026-07; they live in git history.
 
 ## Site
 
-- site/ - a symlink to the sibling checkout of git@github.com:enot-theme/site.git, an Astro project (not build output); served at https://enot-theme.github.io/site/ ;
-- Pages source is GitHub Actions (not a branch): the site repo's deploy workflow runs astro build and publishes; base is /site, build.format 'file' keeps flat .html URLs;
+- site/ - a symlink to the sibling checkout of git@github.com:enot-theme/enot-theme.github.io.git, an Astro project (not build output); as the organization site it is served at the root: https://enot-theme.github.io/ ;
+- Pages source is GitHub Actions (not a branch): the site repo's deploy workflow runs astro check + npm test, then astro build and publishes; no base path, directory-style URLs (/vim/, /apps/);
 - the site owns presentation (Astro pages, CSS, install prose in src/data/install.ts); the pipeline owns numbers (src/data/site.json, synced by make deploy). Edit prose/layout in the site repo, never hand-edit src/data/site.json or public/ scheme files;
-- apps.html renders the coverage matrix from the port registry in the bundle; a new port appears there automatically;
+- /apps/ renders the coverage matrix from the port registry in the bundle; a new port appears there automatically;
 - wezterm install snippets - config_builder style, no top-level return in examples;
 - analytics: GoatCounter, code in site/src/data/config.ts (register the code to receive data; '' disables).
 

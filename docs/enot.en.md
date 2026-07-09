@@ -22,10 +22,10 @@ The goal: keep the warm aesthetics and provide a measurable guarantee - every co
 - after maximization an aesthetic pass pulls each role back toward its gruvbox anchor as long as the set minimum stays above a floor;
 - ANSI 16: four neutral slots spread along the lightness axis; six color families live in two disjoint lightness tiers - the family is recognized by its tier, and dichromacy does not distort lightness; in the light theme bright colors are darker than normal ones, as in gruvbox light;
 - the spec: resolve.py builds colors.json - every theme role at three depths: hex (true color), xterm-256 index, ANSI slot; the 256 depth is not naive quantization (the xterm grid is so sparse in the muted region that nearest colors collapse roles down to ΔE00 = 0) - the same max-min optimizer runs over grid candidates anchored to the true-color values;
-- the renderers vim.py, wezterm.py, mc.py, ranger.py substitute ready values from colors.json and contain no color math;
+- the port engine (build.py) renders every port under ports/ from colors.json; a port substitutes ready values and contains no color math;
 - regression: check.py verifies the colors.json invariants at every depth and that every color literal in the generated themes belongs to the spec; make check fails the build on any violation.
 
-The key trade-off: an iso-lightness palette is impossible in principle - for seven accents on one LCh circle the ceiling of min ΔE00 is about 5. A 20-unit lightness corridor raises the ceiling to about 12. The shipped values: 8.2 for accents and 7.2 for ANSI 16, both themes. At the 256 depth the actual accent minima are 7.3 (dark) and 2.2 (light): the light theme hits the physical ceiling of the xterm grid at 4.5:1 contrast, the full guarantee is carried by the true-color variants. Tritanopia (around 0.01% of the population) is not a hard constraint and is shown in the cvd.html report for reference.
+The key trade-off: an iso-lightness palette is impossible in principle - for seven accents on one LCh circle the ceiling of min ΔE00 is about 5. A 20-unit lightness corridor raises the ceiling to about 12. The shipped values: 8.2 for accents and 7.2 for ANSI 16, both themes. At the 256 depth the actual accent minima are 7.3 (dark) and 2.2 (light): the light theme hits the physical ceiling of the xterm grid at 4.5:1 contrast, the full guarantee is carried by the true-color variants. Tritanopia (around 0.01% of the population) is not a hard constraint; it is simulated only for the site's live vision switcher.
 
 ## Research basis
 
@@ -39,13 +39,15 @@ The key trade-off: an iso-lightness palette is impossible in principle - for sev
 
 ## Tooling
 
-- palette.py - palettes and the preview.html comparison page;
-- optimize.py - the accents and ANSI 16 optimizer;
+- palette.py - shared constants, LCh to sRGB math and the theme assembly from enot.json;
+- optimize.py - the accents and ANSI 16 optimizer (enot.json);
 - resolve.py - the colors.json spec (three color depths);
+- build.py - the port engine: renders every port under ports/ from the spec;
+- assets.py - the README design reference SVGs;
+- cvd.py - the dichromacy simulation matrices and CIEDE2000;
 - check.py - the single regression over invariants and artifacts;
-- cvd.py - the cvd.html dichromacy report;
-- vim.py, wezterm.py, mc.py, ranger.py - theme substitution from colors.json;
-- make with no arguments prints the targets, make all runs the full cycle.
+- sitedata.py - the site data bundle: precomputed simulations, metrics, gates, the port registry;
+- make with no arguments prints the targets, make build runs the full cycle.
 
 ## Installation
 
@@ -57,6 +59,6 @@ vim and neovim: copy vim/colors/enot.vim to ~/.vim/colors/ or ~/.config/nvim/col
 
 wezterm: copy wezterm/*.toml to ~/.config/wezterm/colors/ and set color_scheme = "enot-dark" or "enot-light".
 
-mc: copy mc/*.ini to ~/.local/share/mc/skins/ and pick the skin in Options > Appearance, or run mc -S enot-dark-16M. The -16M variants are truecolor (mc >= 4.8.19 built with S-Lang, COLORTERM=truecolor); the 256 variants use the nearest xterm-256 colors by CIEDE2000 while preserving the 4.5:1 contrast; on a terminal without truecolor mc does not degrade a skin per color but falls back to the default skin entirely, so the 256 variant is required there.
+mc: copy mc/*.ini to ~/.local/share/mc/skins/ and pick the skin in Options > Appearance, or run mc -S enot-dark-16M. The -16M variants are truecolor (mc >= 4.8.19 built with S-Lang, COLORTERM=truecolor); the 256 variants carry the xterm-256 depth of the spec, solved by the same max-min optimizer; on a terminal without truecolor mc does not degrade a skin per color but falls back to the default skin entirely, so the 256 variant is required there.
 
 ranger: copy ranger/colorschemes/enot.py to ~/.config/ranger/colorschemes/ and add set colorscheme enot to rc.conf. The scheme assigns roles via ANSI indices 0-15 and takes the actual colors from the terminal palette (wezterm/enot-*.toml), so a single file serves both themes; requires ranger >= 1.9.3.
