@@ -104,8 +104,9 @@ def check_artifacts(spec, msgs):
                 fail(msgs, not alien,
                      f"{path}: 256 indexes from the specification"
                      + (f" (alien: {sorted(alien)})" if alien else ""))
-    # README reference sheets carry only specification colors; cvd.svg is
-    # exempt by design (gruvbox comparison and simulation outputs)
+    # README reference sheets carry only specification colors;
+    # cvd-{dark,light}.svg are exempt by design (gruvbox comparison and
+    # simulation outputs)
     for path in HEX_CHECKED:
         check_hex(path, open(path).read(), hexes, msgs)
 

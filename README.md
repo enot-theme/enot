@@ -16,7 +16,10 @@ https://enot-theme.github.io/
 
 ## Why
 
-![gruvbox and enot accents under simulated dichromacy with measured minimum pairwise dE00](docs/assets/cvd.svg)
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="docs/assets/cvd-light.svg">
+  <img alt="gruvbox and enot accents under simulated dichromacy with measured minimum pairwise dE00" src="docs/assets/cvd-dark.svg">
+</picture>
 
 Warm themes encode meaning almost purely by hue, and dichromacy folds
 the warm hues into one ochre band: gruvbox drops to dE00 2.5 between

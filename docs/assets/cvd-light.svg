@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="336" viewBox="0 0 640 336">
+<rect width="640" height="336" rx="10" fill="#f4f2ee"/>
+<text x="24" y="38" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">normal vision</text>
+<text x="24" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">gruvbox</text>
+<circle cx="118" cy="62" r="11" fill="#cc241d" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="62" r="11" fill="#d65d0e" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="62" r="11" fill="#d79921" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="62" r="11" fill="#98971a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="62" r="11" fill="#689d6a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="62" r="11" fill="#458588" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="62" r="11" fill="#b16286" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 16.0</text>
+<text x="24" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">enot</text>
+<circle cx="118" cy="94" r="11" fill="#a95359" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="94" r="11" fill="#743d19" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="94" r="11" fill="#68573d" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="94" r="11" fill="#6a6c28" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="94" r="11" fill="#177657" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="94" r="11" fill="#187886" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="94" r="11" fill="#9a5073" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 11.4</text>
+<text x="24" y="138" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">protanopia</text>
+<text x="24" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">gruvbox</text>
+<circle cx="118" cy="162" r="11" fill="#525220" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="162" r="11" fill="#737313" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="162" r="11" fill="#a2a223" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="162" r="11" fill="#97971a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="162" r="11" fill="#98986a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="162" r="11" fill="#808088" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="162" r="11" fill="#6f6f86" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 3.5</text>
+<text x="24" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">enot</text>
+<circle cx="118" cy="194" r="11" fill="#62625a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="194" r="11" fill="#46461a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="194" r="11" fill="#59593d" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="194" r="11" fill="#6c6c28" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="194" r="11" fill="#707057" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="194" r="11" fill="#727286" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="194" r="11" fill="#5c5c73" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 8.4</text>
+<text x="24" y="238" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">deuteranopia</text>
+<text x="24" y="266" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">gruvbox</text>
+<circle cx="118" cy="262" r="11" fill="#787800" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="262" r="11" fill="#8f8f00" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="262" r="11" fill="#aeae14" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="262" r="11" fill="#97971a" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="262" r="11" fill="#90906c" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="262" r="11" fill="#777789" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="262" r="11" fill="#808084" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="266" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 2.8</text>
+<text x="24" y="298" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">enot</text>
+<circle cx="118" cy="294" r="11" fill="#757556" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="294" r="11" fill="#525214" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="294" r="11" fill="#5c5c3c" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="294" r="11" fill="#6b6b28" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="294" r="11" fill="#656559" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="294" r="11" fill="#676787" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="294" r="11" fill="#6c6c71" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="298" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 8.3</text>
+</svg>

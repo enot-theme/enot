@@ -7,12 +7,14 @@ Three kinds of artifacts under docs/assets/:
   (picture element switches on the viewer's color scheme);
 - palette-{dark,light}.svg: the reference sheet - accents, neutrals,
   diff backgrounds and the ANSI 16 rows with hex labels;
-- cvd.svg: gruvbox vs enot accents under simulated dichromacy with the
-  measured minimum pairwise dE00 per row - the argument in one image.
+- cvd-{dark,light}.svg: gruvbox vs enot accents under simulated
+  dichromacy with the measured minimum pairwise dE00 per row - the
+  argument in one image (picture element switches like the others).
 
 The editor and palette sheets carry only specification hexes and are
-scanned by check.py (HEX_CHECKED); cvd.svg is exempt - it renders the
-gruvbox comparison palette and simulation outputs by design.
+scanned by check.py (HEX_CHECKED); cvd-{dark,light}.svg are exempt -
+they render the gruvbox comparison palette and simulation outputs by
+design.
 """
 
 import json
@@ -25,7 +27,7 @@ from palette import ANSI_ORDER, GRUVBOX, ROLES
 OUT = "docs/assets"
 HEX_CHECKED = [f"{OUT}/editor-{m}.svg" for m in ("dark", "light")] + \
               [f"{OUT}/palette-{m}.svg" for m in ("dark", "light")]
-ASSETS = HEX_CHECKED + [f"{OUT}/cvd.svg"]
+ASSETS = HEX_CHECKED + [f"{OUT}/cvd-{m}.svg" for m in ("dark", "light")]
 
 MONO = "ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
 NEUTRALS = ["bg0", "bg1", "bg2", "bg3", "fg0", "fg1", "comment", "linenr"]
@@ -152,13 +154,13 @@ def min_de00(hexes):
     return min(de2000(a, b) for a, b in combinations(labs, 2))
 
 
-def cvd_strip(hexes):
+def cvd_strip(hexes, mode):
     w = 640
     parts = []
     visions = [("normal vision", None),
                ("protanopia", SIM_FUNCS["protanopia"]),
                ("deuteranopia", SIM_FUNCS["deuteranopia"])]
-    rows = [("gruvbox", GRUVBOX["dark"]),
+    rows = [("gruvbox", GRUVBOX[mode]),
             ("enot", [hexes[r] for r in ROLES])]
     for gi, (label, fn) in enumerate(visions):
         base = 38 + gi * 100
@@ -188,9 +190,8 @@ def main():
             f.write(editor(hexes, mode))
         with open(f"{OUT}/palette-{mode}.svg", "w") as f:
             f.write(palette_sheet(hexes, th["ansi"], mode))
-    dark = {n: e["hex"] for n, e in spec["themes"]["dark"]["roles"].items()}
-    with open(f"{OUT}/cvd.svg", "w") as f:
-        f.write(cvd_strip(dark))
+        with open(f"{OUT}/cvd-{mode}.svg", "w") as f:
+            f.write(cvd_strip(hexes, mode))
     for path in ASSETS:
         print(path)
 
