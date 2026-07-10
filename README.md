@@ -2,7 +2,7 @@
 
 An earthy colorscheme that survives color blindness. Dark and light,
 gruvbox character, every color generated in CIELAB - and machine-checked:
-minimum pairwise dE00 8.2 between syntax accents and 7.2 across the
+minimum pairwise dE00 11.1 between syntax accents and 7.2 across the
 16 ANSI colors, measured under simulated protanopia and deuteranopia
 on every build.
 

@@ -47,8 +47,11 @@ ANSI_HUE_ANCHOR = {"red": 32, "yellow": 84, "green": 105,
                    "cyan": 140, "blue": 215, "magenta": 352}
 
 BOUNDS_ACC = {
-    "dark": {"l": (62, 82, 2), "c": (14, 32, 2)},
-    "light": {"l": (32, 46, 2), "c": (18, 38, 2)},
+    # variant 5: L window opened to the legal contrast limit and the
+    # chroma ceiling raised - the accents use the whole gamut instead
+    # of the muted center; slack 0 in main() keeps that spread
+    "dark": {"l": (59, 92, 2), "c": (14, 52, 2)},
+    "light": {"l": (26, 46, 2), "c": (18, 52, 2)},
 }
 # ANSI: non-overlapping L* tiers; in the light theme bright colors are
 # darker than normal ones (as in the original gruvbox light)
@@ -285,7 +288,7 @@ def main():
         guards = [color_from_hex(theme["fg0"]),
                   color_from_hex(theme["comment"])]
         chosen = solve(build_candidates(accent_specs(mode), bg, guards),
-                       accent_anchors(base, mode), FLOOR_ACC, "red")
+                       accent_anchors(base, mode), FLOOR_ACC, "red", slack=0.0)
         result["accents"][mode] = {r: list(chosen[r]["lch"]) for r in ROLES}
         report_chosen(f"{mode} accents", chosen, bg)
         chosen16 = solve(build_candidates(ansi_specs(mode), bg, guards),

@@ -11,14 +11,14 @@
 <circle cx="310" cy="62" r="11" fill="#b16286" stroke="#c4c2be" stroke-width="1"/>
 <text x="616" y="66" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 16.0</text>
 <text x="24" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">enot</text>
-<circle cx="118" cy="94" r="11" fill="#a95359" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="150" cy="94" r="11" fill="#743d19" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="182" cy="94" r="11" fill="#68573d" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="214" cy="94" r="11" fill="#6a6c28" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="246" cy="94" r="11" fill="#177657" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="278" cy="94" r="11" fill="#187886" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="310" cy="94" r="11" fill="#9a5073" stroke="#c4c2be" stroke-width="1"/>
-<text x="616" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 11.4</text>
+<circle cx="118" cy="94" r="11" fill="#9d5a5d" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="94" r="11" fill="#632f05" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="94" r="11" fill="#876923" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="94" r="11" fill="#495a38" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="94" r="11" fill="#09797c" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="94" r="11" fill="#0c6a96" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="94" r="11" fill="#974164" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="98" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 11.2</text>
 <text x="24" y="138" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">protanopia</text>
 <text x="24" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">gruvbox</text>
 <circle cx="118" cy="162" r="11" fill="#525220" stroke="#c4c2be" stroke-width="1"/>
@@ -30,14 +30,14 @@
 <circle cx="310" cy="162" r="11" fill="#6f6f86" stroke="#c4c2be" stroke-width="1"/>
 <text x="616" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 3.5</text>
 <text x="24" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">enot</text>
-<circle cx="118" cy="194" r="11" fill="#62625a" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="150" cy="194" r="11" fill="#46461a" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="182" cy="194" r="11" fill="#59593d" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="214" cy="194" r="11" fill="#6c6c28" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="246" cy="194" r="11" fill="#707057" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="278" cy="194" r="11" fill="#727286" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="310" cy="194" r="11" fill="#5c5c73" stroke="#c4c2be" stroke-width="1"/>
-<text x="616" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 8.4</text>
+<circle cx="118" cy="194" r="11" fill="#64645d" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="194" r="11" fill="#383806" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="194" r="11" fill="#6d6d23" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="194" r="11" fill="#585838" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="194" r="11" fill="#73737c" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="194" r="11" fill="#646496" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="194" r="11" fill="#515164" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="198" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 11.3</text>
 <text x="24" y="238" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">deuteranopia</text>
 <text x="24" y="266" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">gruvbox</text>
 <circle cx="118" cy="262" r="11" fill="#787800" stroke="#c4c2be" stroke-width="1"/>
@@ -49,12 +49,12 @@
 <circle cx="310" cy="262" r="11" fill="#808084" stroke="#c4c2be" stroke-width="1"/>
 <text x="616" y="266" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 2.8</text>
 <text x="24" y="298" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="start" xml:space="preserve">enot</text>
-<circle cx="118" cy="294" r="11" fill="#757556" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="150" cy="294" r="11" fill="#525214" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="182" cy="294" r="11" fill="#5c5c3c" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="214" cy="294" r="11" fill="#6b6b28" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="246" cy="294" r="11" fill="#656559" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="278" cy="294" r="11" fill="#676787" stroke="#c4c2be" stroke-width="1"/>
-<circle cx="310" cy="294" r="11" fill="#6c6c71" stroke="#c4c2be" stroke-width="1"/>
-<text x="616" y="298" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 8.3</text>
+<circle cx="118" cy="294" r="11" fill="#73735b" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="150" cy="294" r="11" fill="#434300" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="182" cy="294" r="11" fill="#737320" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="214" cy="294" r="11" fill="#555539" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="246" cy="294" r="11" fill="#67677d" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="278" cy="294" r="11" fill="#5a5a97" stroke="#c4c2be" stroke-width="1"/>
+<circle cx="310" cy="294" r="11" fill="#646462" stroke="#c4c2be" stroke-width="1"/>
+<text x="616" y="298" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" fill="#48443e" text-anchor="end" xml:space="preserve">min &#916;E00 11.1</text>
 </svg>

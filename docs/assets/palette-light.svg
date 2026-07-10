@@ -1,27 +1,27 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="454" viewBox="0 0 640 454">
 <rect width="640" height="454" rx="10" fill="#f4f2ee"/>
 <text x="24" y="30" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">accents</text>
-<rect x="24" y="38" width="76" height="44" rx="5" fill="#a95359" stroke="#c4c2be" stroke-width="1"/>
+<rect x="24" y="38" width="76" height="44" rx="5" fill="#9d5a5d" stroke="#c4c2be" stroke-width="1"/>
 <text x="62.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">red</text>
-<text x="62.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#a95359</text>
-<rect x="110" y="38" width="76" height="44" rx="5" fill="#743d19" stroke="#c4c2be" stroke-width="1"/>
+<text x="62.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#9d5a5d</text>
+<rect x="110" y="38" width="76" height="44" rx="5" fill="#632f05" stroke="#c4c2be" stroke-width="1"/>
 <text x="148.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">orange</text>
-<text x="148.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#743d19</text>
-<rect x="196" y="38" width="76" height="44" rx="5" fill="#68573d" stroke="#c4c2be" stroke-width="1"/>
+<text x="148.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#632f05</text>
+<rect x="196" y="38" width="76" height="44" rx="5" fill="#876923" stroke="#c4c2be" stroke-width="1"/>
 <text x="234.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">yellow</text>
-<text x="234.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#68573d</text>
-<rect x="282" y="38" width="76" height="44" rx="5" fill="#6a6c28" stroke="#c4c2be" stroke-width="1"/>
+<text x="234.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#876923</text>
+<rect x="282" y="38" width="76" height="44" rx="5" fill="#495a38" stroke="#c4c2be" stroke-width="1"/>
 <text x="320.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">green</text>
-<text x="320.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#6a6c28</text>
-<rect x="368" y="38" width="76" height="44" rx="5" fill="#177657" stroke="#c4c2be" stroke-width="1"/>
+<text x="320.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#495a38</text>
+<rect x="368" y="38" width="76" height="44" rx="5" fill="#09797c" stroke="#c4c2be" stroke-width="1"/>
 <text x="406.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">aqua</text>
-<text x="406.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#177657</text>
-<rect x="454" y="38" width="76" height="44" rx="5" fill="#187886" stroke="#c4c2be" stroke-width="1"/>
+<text x="406.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#09797c</text>
+<rect x="454" y="38" width="76" height="44" rx="5" fill="#0c6a96" stroke="#c4c2be" stroke-width="1"/>
 <text x="492.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">blue</text>
-<text x="492.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#187886</text>
-<rect x="540" y="38" width="76" height="44" rx="5" fill="#9a5073" stroke="#c4c2be" stroke-width="1"/>
+<text x="492.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#0c6a96</text>
+<rect x="540" y="38" width="76" height="44" rx="5" fill="#974164" stroke="#c4c2be" stroke-width="1"/>
 <text x="578.0" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">purple</text>
-<text x="578.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#9a5073</text>
+<text x="578.0" y="109" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#974164</text>
 <text x="24" y="134" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">neutrals</text>
 <rect x="24" y="142" width="66" height="28" rx="5" fill="#f4f2ee" stroke="#c4c2be" stroke-width="1"/>
 <text x="57.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">bg0</text>
@@ -48,18 +48,18 @@
 <text x="575.0" y="185" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">linenr</text>
 <text x="575.0" y="197" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#b3b0ab</text>
 <text x="24" y="222" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">diff backgrounds</text>
-<rect x="24" y="230" width="120" height="28" rx="5" fill="#e5e3d0" stroke="#c4c2be" stroke-width="1"/>
+<rect x="24" y="230" width="120" height="28" rx="5" fill="#dde5d3" stroke="#c4c2be" stroke-width="1"/>
 <text x="84.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_add_bg</text>
-<text x="84.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#e5e3d0</text>
-<rect x="154" y="230" width="120" height="28" rx="5" fill="#f7dcdc" stroke="#c4c2be" stroke-width="1"/>
+<text x="84.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#dde5d3</text>
+<rect x="154" y="230" width="120" height="28" rx="5" fill="#e6cbcb" stroke="#c4c2be" stroke-width="1"/>
 <text x="214.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_del_bg</text>
-<text x="214.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#f7dcdc</text>
-<rect x="284" y="230" width="120" height="28" rx="5" fill="#d0e7eb" stroke="#c4c2be" stroke-width="1"/>
+<text x="214.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#e6cbcb</text>
+<rect x="284" y="230" width="120" height="28" rx="5" fill="#d7e4f1" stroke="#c4c2be" stroke-width="1"/>
 <text x="344.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_change_bg</text>
-<text x="344.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#d0e7eb</text>
-<rect x="414" y="230" width="120" height="28" rx="5" fill="#b1d9e0" stroke="#c4c2be" stroke-width="1"/>
+<text x="344.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#d7e4f1</text>
+<rect x="414" y="230" width="120" height="28" rx="5" fill="#bcd5eb" stroke="#c4c2be" stroke-width="1"/>
 <text x="474.0" y="273" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">diff_text_bg</text>
-<text x="474.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#b1d9e0</text>
+<text x="474.0" y="285" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" fill="#64605c" text-anchor="middle" xml:space="preserve">#bcd5eb</text>
 <text x="24" y="310" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#64605c" text-anchor="start" font-weight="600" xml:space="preserve">ansi 16</text>
 <rect x="24" y="318" width="66" height="24" rx="5" fill="#4a4641" stroke="#c4c2be" stroke-width="1"/>
 <text x="57.0" y="357" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#48443e" text-anchor="middle" xml:space="preserve">black</text>

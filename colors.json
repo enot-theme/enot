@@ -45,47 +45,47 @@
      "c256hex": "#4e4e4e"
     },
     "red": {
-     "hex": "#daa3a2",
+     "hex": "#d7a0a1",
      "c256": 174,
      "c256hex": "#d78787"
     },
     "orange": {
-     "hex": "#b28e7d",
+     "hex": "#ad8764",
      "c256": 137,
      "c256hex": "#af875f"
     },
     "yellow": {
-     "hex": "#ae925d",
-     "c256": 179,
-     "c256hex": "#d7af5f"
+     "hex": "#fde494",
+     "c256": 222,
+     "c256hex": "#ffd787"
     },
     "green": {
-     "hex": "#bbb97d",
-     "c256": 186,
-     "c256hex": "#d7d787"
+     "hex": "#bab04d",
+     "c256": 143,
+     "c256hex": "#afaf5f"
     },
     "aqua": {
-     "hex": "#78d0c2",
-     "c256": 80,
-     "c256hex": "#5fd7d7"
+     "hex": "#9ff5e3",
+     "c256": 158,
+     "c256hex": "#afffd7"
     },
     "blue": {
-     "hex": "#65b7c6",
-     "c256": 109,
-     "c256hex": "#87afaf"
+     "hex": "#79cad9",
+     "c256": 81,
+     "c256hex": "#5fd7ff"
     },
     "purple": {
-     "hex": "#cb87a2",
-     "c256": 218,
-     "c256hex": "#ffafd7"
+     "hex": "#c37fa1",
+     "c256": 175,
+     "c256hex": "#d787af"
     },
     "diff_add_bg": {
-     "hex": "#3f3e2f",
+     "hex": "#413e2f",
      "c256": 58,
      "c256hex": "#5f5f00"
     },
     "diff_del_bg": {
-     "hex": "#4d3838",
+     "hex": "#3f2b2c",
      "c256": 52,
      "c256hex": "#5f0000"
     },
@@ -210,59 +210,59 @@
      "c256hex": "#c6c6c6"
     },
     "red": {
-     "hex": "#a95359",
-     "c256": 88,
-     "c256hex": "#870000"
+     "hex": "#9d5a5d",
+     "c256": 124,
+     "c256hex": "#af0000"
     },
     "orange": {
-     "hex": "#743d19",
+     "hex": "#632f05",
      "c256": 160,
      "c256hex": "#d70000"
     },
     "yellow": {
-     "hex": "#68573d",
+     "hex": "#876923",
      "c256": 94,
      "c256hex": "#875f00"
     },
     "green": {
-     "hex": "#6a6c28",
-     "c256": 58,
-     "c256hex": "#5f5f00"
+     "hex": "#495a38",
+     "c256": 22,
+     "c256hex": "#005f00"
     },
     "aqua": {
-     "hex": "#177657",
+     "hex": "#09797c",
      "c256": 23,
      "c256hex": "#005f5f"
     },
     "blue": {
-     "hex": "#187886",
+     "hex": "#0c6a96",
      "c256": 24,
      "c256hex": "#005f87"
     },
     "purple": {
-     "hex": "#9a5073",
+     "hex": "#974164",
      "c256": 125,
      "c256hex": "#af005f"
     },
     "diff_add_bg": {
-     "hex": "#e5e3d0",
+     "hex": "#dde5d3",
      "c256": 187,
      "c256hex": "#d7d7af"
     },
     "diff_del_bg": {
-     "hex": "#f7dcdc",
-     "c256": 217,
-     "c256hex": "#ffafaf"
+     "hex": "#e6cbcb",
+     "c256": 181,
+     "c256hex": "#d7afaf"
     },
     "diff_change_bg": {
-     "hex": "#d0e7eb",
-     "c256": 195,
-     "c256hex": "#d7ffff"
+     "hex": "#d7e4f1",
+     "c256": 153,
+     "c256hex": "#afd7ff"
     },
     "diff_text_bg": {
-     "hex": "#b1d9e0",
-     "c256": 80,
-     "c256hex": "#5fd7d7"
+     "hex": "#bcd5eb",
+     "c256": 146,
+     "c256hex": "#afafd7"
     }
    },
    "ansi": {
@@ -336,44 +336,44 @@
  "metrics": {
   "dark": {
    "16M": {
-    "accents": 8.31,
-    "tints": 3.55,
-    "guard_accents": 10.25,
+    "accents": 13.25,
+    "tints": 5.83,
+    "guard_accents": 10.2,
     "red_chroma": 21.9,
     "ansi16": 7.2,
     "guard_ansi_normal": 10.59,
     "guard_ansi_bright": 6.72,
     "ansi_tier_gap": 8.1,
-    "contrast": 4.65
+    "contrast": 4.51
    },
    "256": {
-    "accents": 7.31,
+    "accents": 8.26,
     "tints": 12.46,
-    "guard_accents": 8.53,
+    "guard_accents": 7.63,
     "red_chroma": 33.3,
     "contrast": 4.56,
-    "drift_max": 19.42
+    "drift_max": 19.32
    }
   },
   "light": {
    "16M": {
-    "accents": 8.27,
-    "tints": 4.24,
-    "guard_accents": 10.45,
-    "red_chroma": 38.2,
+    "accents": 11.06,
+    "tints": 4.58,
+    "guard_accents": 10.13,
+    "red_chroma": 29.7,
     "ansi16": 7.22,
     "guard_ansi_normal": 11.16,
     "guard_ansi_bright": 6.54,
     "ansi_tier_gap": 4.0,
-    "contrast": 4.62
+    "contrast": 4.61
    },
    "256": {
-    "accents": 2.18,
-    "tints": 3.92,
+    "accents": 3.77,
+    "tints": 8.08,
     "guard_accents": 8.3,
-    "red_chroma": 64.1,
-    "contrast": 4.65,
-    "drift_max": 20.39
+    "red_chroma": 78.8,
+    "contrast": 4.61,
+    "drift_max": 23.71
    }
   }
  }

@@ -11,17 +11,17 @@
         "fg1": "#64605c",
         "comment": "#9b9893",
         "linenr": "#b3b0ab",
-        "red": "#a95359",
-        "orange": "#743d19",
-        "yellow": "#68573d",
-        "green": "#6a6c28",
-        "aqua": "#177657",
-        "blue": "#187886",
-        "purple": "#9a5073",
-        "diff_add_bg": "#e5e3d0",
-        "diff_del_bg": "#f7dcdc",
-        "diff_change_bg": "#d0e7eb",
-        "diff_text_bg": "#b1d9e0"
+        "red": "#9d5a5d",
+        "orange": "#632f05",
+        "yellow": "#876923",
+        "green": "#495a38",
+        "aqua": "#09797c",
+        "blue": "#0c6a96",
+        "purple": "#974164",
+        "diff_add_bg": "#dde5d3",
+        "diff_del_bg": "#e6cbcb",
+        "diff_change_bg": "#d7e4f1",
+        "diff_text_bg": "#bcd5eb"
     },
     "globals":
     {

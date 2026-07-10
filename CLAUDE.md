@@ -44,4 +44,4 @@ port sources in ports/<app>/, rendered artifacts in dist/<app>/.
 ## Documentation
 
 - docs/enot.en.md is the single method document; when the method or numbers change, update it, then make sitedata regenerates llms-full.txt and make deploy publishes it;
-- key numbers: min dE00 8.2 (accents) and 7.2 (ANSI) in truecolor, 7.3/2.2 (256 accents, dark/light); the site takes numbers from the synced bundle automatically; in write-ups verify against metrics.
+- key numbers: min dE00 13.3 dark / 11.1 light (accents) and 7.2 (ANSI) in truecolor, 8.3/3.8 (256 accents, dark/light); the site takes numbers from the synced bundle automatically; in write-ups verify against metrics.

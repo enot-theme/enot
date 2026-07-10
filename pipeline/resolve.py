@@ -112,7 +112,9 @@ def tints(v, mode):
     soft = 26 if dark else 90
     lch = {
         "diff_add_bg": (soft, 10, hue["green"]),
-        "diff_del_bg": (soft, 10, hue["red"]),
+        # del darkened: the add/del pair separates on lightness (survives
+        # dichromacy) instead of the red-green hue axis deuteranopia collapses
+        "diff_del_bg": (soft - 6, 10, hue["red"]),
         "diff_change_bg": (soft, 8, hue["blue"]),
         "diff_text_bg": (32 if dark else 84, 14, hue["blue"]),
     }
