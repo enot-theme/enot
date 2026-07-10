@@ -1,0 +1,13 @@
+{
+  "app": "ohmyzsh",
+  "name": "Oh My Zsh",
+  "category": "shell",
+  "kind": "static",
+  "depth": "ansi",
+  "guarantee": "ansi",
+  "src": "enot.zsh-theme",
+  "outputs": [
+    {"path": "dist/ohmyzsh/enot.zsh-theme"}
+  ],
+  "install": "copy into ~/.oh-my-zsh/custom/themes/ and set ZSH_THEME=\"enot\" in ~/.zshrc"
+}

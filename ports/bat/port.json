@@ -1,0 +1,14 @@
+{
+  "app": "bat",
+  "name": "bat",
+  "category": "pager",
+  "kind": "template",
+  "depth": "16M",
+  "guarantee": "full",
+  "template": "scheme.tmTheme.tmpl",
+  "outputs": [
+    {"theme": "dark", "path": "dist/bat/enot-dark.tmTheme"},
+    {"theme": "light", "path": "dist/bat/enot-light.tmTheme"}
+  ],
+  "install": "copy into \"$(bat --config-dir)/themes/\", run bat cache --build, then --theme=enot-dark or BAT_THEME=enot-dark"
+}

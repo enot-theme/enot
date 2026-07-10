@@ -2,6 +2,25 @@
   "slug": "enot",
   "ports": [
     {
+      "app": "bat",
+      "name": "bat",
+      "category": "pager",
+      "kind": "template",
+      "depth": "16M",
+      "guarantee": "full",
+      "install": "copy into \"$(bat --config-dir)/themes/\", run bat cache --build, then --theme=enot-dark or BAT_THEME=enot-dark",
+      "outputs": [
+        {
+          "theme": "dark",
+          "path": "dist/bat/enot-dark.tmTheme"
+        },
+        {
+          "theme": "light",
+          "path": "dist/bat/enot-light.tmTheme"
+        }
+      ]
+    },
+    {
       "app": "lightline",
       "name": "lightline",
       "category": "statusline",
@@ -54,6 +73,20 @@
         {
           "theme": "light",
           "path": "dist/nimble/enot-light.json"
+        }
+      ]
+    },
+    {
+      "app": "ohmyzsh",
+      "name": "Oh My Zsh",
+      "category": "shell",
+      "kind": "static",
+      "depth": "ansi",
+      "guarantee": "ansi",
+      "install": "copy into ~/.oh-my-zsh/custom/themes/ and set ZSH_THEME=\"enot\" in ~/.zshrc",
+      "outputs": [
+        {
+          "path": "dist/ohmyzsh/enot.zsh-theme"
         }
       ]
     },
